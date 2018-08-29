@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <title>Danaher Benefit Microsite</title>
 <link rel="stylesheet" href="css/styles.css" media="all" type="text/css" >
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  
 <link href="css/drawer.css" rel="stylesheet">
 </head>
 <style>
@@ -11,6 +14,39 @@
 	.promo-content{
 		background: url(images/photos/father_carry_child.jpg) center;
 	}
+	
+
+    .slider {
+        width: 70%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
 	</style>
 
 <body class="drawer drawer--right">
@@ -166,7 +202,45 @@
 
 	<div class="sliderarea">
 		<div class="herotitle">myBenefits: Explore Your Options—Now and Year-round</div>
-		<section id="decide1" class="hero slick-initialized slick-slider">
+		<section class="regular slider">
+			<div>
+			  <img src="http://placehold.it/350x300?text=1">
+			</div>
+			<div>
+			  <img src="http://placehold.it/350x300?text=2">
+			</div>
+			<div>
+			  <img src="http://placehold.it/350x300?text=3">
+			</div>
+			<div>
+			  <img src="http://placehold.it/350x300?text=4">
+			</div>
+			<div>
+			  <img src="http://placehold.it/350x300?text=5">
+			</div>
+			<div>
+			  <img src="http://placehold.it/350x300?text=6">
+			</div>
+			<div>
+			  <img src="http://placehold.it/350x300?text=1">
+			</div>
+			<div>
+			  <img src="http://placehold.it/350x300?text=2">
+			</div>
+			<div>
+			  <img src="http://placehold.it/350x300?text=3">
+			</div>
+			<div>
+			  <img src="http://placehold.it/350x300?text=4">
+			</div>
+			<div>
+			  <img src="http://placehold.it/350x300?text=5">
+			</div>
+			<div>
+			  <img src="http://placehold.it/350x300?text=6">
+			</div>
+		  </section>
+		<!-- <section id="decide1" class="hero slick-initialized slick-slider">
 			<button type="button" data-role="none" class="slick-prev slick-arrow slick-disabled" aria-label="Previous" role="button" aria-disabled="true" style="display: block;">Previous</button>
 			<div aria-live="polite" class="slick-list draggable">
 				<div class="slick-track" style="opacity: 1; width: 3068px; transform: translate3d(0px, 0px, 0px);" role="listbox">
@@ -216,16 +290,26 @@
 													</div>
 												</div>
 														<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;" aria-disabled="false">Next</button>
-													</section>	
-												</div>
+													</section>	 -->
+	</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/drawer.js" charset="utf-8"></script>
+  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+
   <script>
     $(document).ready(function() {
-      $('.drawer').drawer();
+	  $('.drawer').drawer();
+
+	  $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 3
+      });
+    
     });
   </script>
 </body>
