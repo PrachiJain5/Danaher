@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <title>Danaher Benefit Microsite</title>
 <link rel="stylesheet" href="css/styles.css" media="all" type="text/css" >
- 
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </head>
 
@@ -43,7 +44,7 @@
 <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate. Velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 			
 		
-        <h4 class="accordion" id="accordion1">New medical plan choices  </h4>
+        <h4 class="accordion">New medical plan choices  </h4>
 		<div class="panel" >
 			<p>Good news—several medical insurance carriers will be available for you to choose from. More choice means you have the power to find a plan that’s truly best for you. </p>
   
@@ -103,24 +104,12 @@
   <div class="copyright">© 2018 Alight Solutions. All rights reserved. <a href="#">Legal Information</a></div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script src="js/drawer.js" charset="utf-8"></script>
-  <script>
-	  $(function(){
-	  $(".accordion").accordion();
-		  collapsible:true;
-		  autoHeight:false;
-		  active:false
-	  });
-	
-	  
-
-  </script>
+  <script>$( "#accordion" ).accordion();</script>
 </body>
 </html>

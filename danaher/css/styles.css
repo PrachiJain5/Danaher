@@ -56,7 +56,7 @@ a:active.button-link{color: #ffffff; background-color: #035D67;box-shadow: 0px 0
 /*content*/
 .site-header{min-height: 120px;}
 .utility-nav{min-height: 30px; font-size: 12px; line-height: 1; text-align: right; padding: 16px 20px 0 0}
-.home-link {display:block; float: left; width: 350px; height: 60px; background: url(images/danaher_benefits_logo_2x.png) left center no-repeat; background-size: contain; font-size: 0;}
+.home-link {display:block; float: left; width: 350px; height: 60px; background: url(images/total_rewards_benefits.png) left center no-repeat; background-size: contain; font-size: 0;}
 .search-box{float: right; padding: 8px 20px 2px 10px;}
 .search-box input {
 	font-size: 16px;
@@ -128,7 +128,7 @@ a:active.button-link{color: #ffffff; background-color: #035D67;box-shadow: 0px 0
 
 
 /*accordions*/
-h4.panel {
+h4.accordion {
     position: relative;
     transition: 0.4s;
     color: #035d67;
@@ -143,12 +143,12 @@ h4.panel {
     border-bottom: solid 1px #ddd;
 }
 
-h4.panel:first-of-type {margin-top: 40px;}
-h4.panel:last-of-type {margin-bottom: 60px;}
-h4.panel:hover {color: #ffffff; background-color: #035d67;}
-h4.panel.active {background-color: #035D67; color: #ffffff;}
+h4.accordion:first-of-type {margin-top: 40px;}
+h4.accordion:last-of-type {margin-bottom: 60px;}
+h4.accordion:hover {color: #ffffff; background-color: #035d67;}
+h4.accordion.active {background-color: #035D67; color: #ffffff;}
 
-h4.panel:before, h3.panel.active:before  {
+h4.accordion:before, h3.accordion.active:before  {
     opacity: 1;
     transition: 0.4s;
     content: "";
@@ -161,11 +161,18 @@ h4.panel:before, h3.panel.active:before  {
     display: inline-block;
 }
 
-h4.panel:before{background: transparent  url("images/plusminusv.png") 0 0 no-repeat; background-size: 20px;}
-h4.panel:hover:before {background: transparent url("images/plusminusv.png") 0 -20px no-repeat; background-size: 20px;}
-h4.panel.active:before {background: transparent url("images/plusminusv.png") 0 -40px no-repeat; background-size: 20px;}
+h4.accordion:before{background: transparent  url("images/plusminusv.png") 0 0 no-repeat; background-size: 20px;}
+h4.accordion:hover:before {background: transparent url("images/plusminusv.png") 0 -20px no-repeat; background-size: 20px;}
+h4.accordion.active:before {background: transparent url("images/plusminusv.png") 0 -40px no-repeat; background-size: 20px;}
 
-div.panel {padding: 20px 60px;}
+div.panel {
+    /* padding: 20px 60px; */
+    padding: 0px 18px;
+    background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;}
+    
 
 /*tiles*/
 a.tileboxbt{
