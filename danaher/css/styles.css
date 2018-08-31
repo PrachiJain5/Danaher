@@ -128,7 +128,7 @@ a:active.button-link{color: #ffffff; background-color: #035D67;box-shadow: 0px 0
 
 
 /*accordions*/
-h4.accordion {
+h4.accord {
     position: relative;
     transition: 0.4s;
     color: #035d67;
@@ -143,12 +143,12 @@ h4.accordion {
     border-bottom: solid 1px #ddd;
 }
 
-h4.accordion:first-of-type {margin-top: 40px;}
-h4.accordion:last-of-type {margin-bottom: 60px;}
-h4.accordion:hover {color: #ffffff; background-color: #035d67;}
-h4.accordion.active {background-color: #035D67; color: #ffffff;}
+h4.accord:first-of-type {margin-top: 40px;}
+h4.accord:last-of-type {margin-bottom: 60px;}
+h4.accord:hover {color: #ffffff; background-color: #035d67;}
+h4.accord.active {background-color: #035D67; color: #ffffff;}
 
-h4.accordion:before, h3.accordion.active:before  {
+h4.accord:before, h3.accord.active:before  {
     opacity: 1;
     transition: 0.4s;
     content: "";
@@ -161,9 +161,9 @@ h4.accordion:before, h3.accordion.active:before  {
     display: inline-block;
 }
 
-h4.accordion:before{background: transparent  url("images/plusminusv.png") 0 0 no-repeat; background-size: 20px;}
-h4.accordion:hover:before {background: transparent url("images/plusminusv.png") 0 -20px no-repeat; background-size: 20px;}
-h4.accordion.active:before {background: transparent url("images/plusminusv.png") 0 -40px no-repeat; background-size: 20px;}
+h4.accord:before{background: transparent  url("images/plusminusv.png") 0 0 no-repeat; background-size: 20px;}
+h4.accord:hover:before {background: transparent url("images/plusminusv.png") 0 -20px no-repeat; background-size: 20px;}
+h4.accord.active:before {background: transparent url("images/plusminusv.png") 0 -40px no-repeat; background-size: 20px;}
 
 div.panel {
     /* padding: 20px 60px; */
