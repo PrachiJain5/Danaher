@@ -144,7 +144,7 @@ h4.accord {
 }
 
 h4.accord:first-of-type {margin-top: 40px;}
-h4.accord:last-of-type {margin-bottom: 60px;}
+/* h4.accord:last-of-type {margin-bottom: 60px;} */
 h4.accord:hover {color: #ffffff; background-color: #035d67;}
 h4.accord.active {background-color: #035D67; color: #ffffff;}
 
@@ -165,15 +165,22 @@ h4.accord:before{background: transparent  url("images/plusminusv.png") 0 0 no-re
 h4.accord:hover:before {background: transparent url("images/plusminusv.png") 0 -20px no-repeat; background-size: 20px;}
 h4.accord.active:before {background: transparent url("images/plusminusv.png") 0 -40px no-repeat; background-size: 20px;}
 
+div#accord_section {
+    padding: 20px 60px;
+    /* padding: 0px 18px; */
+    background-color: white;
+        /* max-height: 0; */
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;}
+
 div.panel {
-    /* padding: 20px 60px; */
-    padding: 0px 18px;
+    padding: 20px 60px;
+    /* padding: 0px 18px; */
     background-color: white;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;}
-    
-
+        
 /*tiles*/
 a.tileboxbt{
 	display: inline-block;

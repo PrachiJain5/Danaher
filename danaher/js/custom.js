@@ -1,3 +1,21 @@
+$( function() {
+    $( "#accordion" ).accordion({
+		collapsible: true,
+        active: false
+	});
+			$( "#accordion h4" ).click(function (event){
+				console.log(event);
+				var elements = $("#accordion h4")
+				console.log(elements)
+				$.each(elements,function (index,element){
+					$(element).removeClass("active")
+				})
+				$(event.target).addClass("active")
+				console.log(event.target)
+			})
+  		} );  
+
+
 function call_sliders() {
     if ($('#bigpicture').length) {
 
