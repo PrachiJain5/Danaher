@@ -9,14 +9,12 @@
 <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 </head>
 <style type="text/css">
-   
-    .slider {
-        width: 80%;
-        /* margin: 100px auto; */
+  .slider {
+        margin: 100px auto;
     }
 
     .slick-slide {
-      margin: 0px 20px;
+      margin: 0px 9px;
     }
 
     .slick-slide img {
@@ -28,6 +26,26 @@
       color: black;
     }
 
+.slick-next:before {
+    content: '';
+    width: 35px;
+    height: 55px !important;
+    display: block;
+    background: url(images/icon.png) -34px -58px no-repeat;
+    background-size: 152px;
+    margin-left: 7px;
+}
+.slick-prev:before {
+    content: '';
+    width: 35px;
+    height: 55px;
+    display: block;
+    background: url(images/icon.png) 4px -50px no-repeat;
+    background-size: 152px;
+}
+.slick-next {
+    height: 50px;
+   }
 
     .slick-slide {
       transition: all ease-in-out .3s;
@@ -41,12 +59,28 @@
     .slick-current {
       opacity: 1;
     }
-  </style>
-<style>
-	
+    .slick-slide {
+    width: 281px !important;
+}
+section.regular {
+    height: auto !important;
+}
+.slick-list {
+    height: 165px;
+}
+
 	.promo-content{
 		background: url(images/photos/father_carry_child.jpg) center;
 	}
+
+.slick-disabled {
+    display: none !important;
+    pointer-events: none;
+}
+.slick-prev {
+    left: -40px;
+    top: 55px;
+}
 	</style>
 
 <body class="drawer drawer--right">
@@ -109,6 +143,8 @@
 		<h1>Ready to enroll?</h1>
 		<h2>Head to the Benefits Support Center and make your choices.</h2>
 		<a class="button-link">Enroll Today</a></div>
+		<h1 id="daysToEnroll"></h1>
+
 		</div>
 	
 	<div class="site-content pw">
@@ -147,15 +183,11 @@
 			</section>
 		</div>
 		
-<<<<<<< HEAD
 		<div class="sliderarea">
 		<h3 class="green">A closer look</h3>
 		<p>Want to know more about what’s new in 2019? It’s here. </p>
-=======
-		<!-- <div class="sliderarea">
 		<h3 class="green">More Detail </h3>
 		<p>Ready to learn more about the changes for 2019? Enjoy.</p>
->>>>>>> d5abdd4c5b133564f5850f76d3534ee962ed6ee4
 		<section id="moreDetail">
 			<a class="tileboxbt" href="secondary.html" style="background-image: url(images/photos/medical_plan_pricing.jpg);">
 				<div class="tilebox"><div class="tilebox-inner">
@@ -175,7 +207,6 @@
 					<h2>Act now if you have an HSA</h2>
 					</div></div></a>
 			</section>
-<<<<<<< HEAD
 		</div>
 
 	<div class="sliderarea">
@@ -198,8 +229,7 @@
 				<div class="tilebox"><div class="tilebox-content">
 					<h1>Dependent Care FSA</h1>
 					</div></div></a>
-=======
-		</div> -->
+		</div> 
 		<div class="sliderarea">
 			<div class="herotitle">myBenefits: Explore Your Options—Now and Year-round</div>
 			<section  class="regular slider" id="decide1">
@@ -243,7 +273,6 @@
 													</div></div>
 												</a>
 										</div>
->>>>>>> d5abdd4c5b133564f5850f76d3534ee962ed6ee4
 			</section>
 		  </div>
 		
@@ -348,8 +377,25 @@
         dots: true,
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+				infinite: false 
+
       });
+			
+			function showEnrolDays(){
+				var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+				var firstDate = new Date();
+				console.log(firstDate)
+				var secondDate = new Date("Oct 15, 2018 12:00:00");
+				console.log(secondDate)
+
+				var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+				console.log(diffDays)
+				$("#daysToEnroll").html(diffDays+"days To Enroll")
+			};
+		
+			showEnrolDays()
+ 
     
     });
 </script>
