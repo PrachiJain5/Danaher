@@ -81,6 +81,9 @@ section.regular {
     left: -40px;
     top: 55px;
 }
+.slick-dots li button:before  {
+	font-size: 30px;
+}
 	</style>
 
 <body class="drawer drawer--right">
@@ -273,6 +276,46 @@ section.regular {
 													</div></div>
 												</a>
 										</div>
+										<div>
+											<a class="tileboxbt" href="secondary.html">
+												<div class="tilebox"><div class="tilebox-content">
+													<h1>Top 3 Things</h1>
+													<h3>You Need to Know</h3>
+													</div></div>
+												</a>
+										</div>
+										<div>
+											<a class="tileboxbt" href="secondary.html">
+												<div class="tilebox"><div class="tilebox-content">
+													<h1>Top 3 Things</h1>
+													<h3>You Need to Know</h3>
+													</div></div>
+												</a>
+										</div>
+										<div>
+											<a class="tileboxbt" href="secondary.html">
+												<div class="tilebox"><div class="tilebox-content">
+													<h1>Top 3 Things</h1>
+													<h3>You Need to Know</h3>
+													</div></div>
+												</a>
+										</div>
+										<div>
+											<a class="tileboxbt" href="secondary.html">
+												<div class="tilebox"><div class="tilebox-content">
+													<h1>Top 3 Things</h1>
+													<h3>You Need to Know</h3>
+													</div></div>
+												</a>
+										</div>
+										<div>
+											<a class="tileboxbt" href="secondary.html">
+												<div class="tilebox"><div class="tilebox-content">
+													<h1>Top 3 Things</h1>
+													<h3>You Need to Know</h3>
+													</div></div>
+												</a>
+										</div>
 			</section>
 		  </div>
 		
@@ -363,24 +406,44 @@ section.regular {
 													</section>	
 												</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script src="js/drawer.js" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).on('ready', function() {
+		
          
       $(".regular").slick({
         dots: true,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 3,
-				infinite: false 
+        slidesToShow: 2,
+        slidesToScroll: 4,
+		infinite: false ,
+		respondTo: 'window'
 
-      });
+	  });
+	  $(window).resize(function (){
+		  console.log("window Resized");
+		  console.log($(screen)[0])
+		  var screenInfo = $(screen)[0];
+		//   var screen= $(screen)[0].width;
+		  if(screenInfo.width<=425){
+			  console.log("I am in Mobile Mode")
+			  $('.slick-arrow').attr('style','display:none')
+			  $('.slick-dots').attr('style','display:block')
+			  $('.slick-slide').attr('style','width:220px');
+			//   $('a.tileboxbt').attr('style','width:100% ');
+
+			//   a.tileboxbt
+			
+		  }else{
+				$('.slick-arrow').attr('style','display:block')
+				$('.slick-dots').attr('style','display:none')
+		  }
+	  })
 			
 			function showEnrolDays(){
 				var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
@@ -395,7 +458,7 @@ section.regular {
 			};
 		
 			showEnrolDays()
- 
+			$(window).resize()
     
     });
 </script>
