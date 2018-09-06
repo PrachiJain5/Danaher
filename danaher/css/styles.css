@@ -56,7 +56,7 @@ a:active.button-link{color: #ffffff; background-color: #035D67;box-shadow: 0px 0
 /*content*/
 .site-header{min-height: 120px;}
 .utility-nav{min-height: 30px; font-size: 12px; line-height: 1; text-align: right; padding: 16px 20px 0 0}
-.home-link {display:block; float: left; width: 350px; height: 60px; background: url(images/total_rewards_benefits.png) left center no-repeat; background-size: contain; font-size: 0;}
+.home-link {display:block; float: left; width: 350px; height: 60px; background: url(images/total_rewards_benefits_2x.png) left center no-repeat; background-size: contain; font-size: 0;}
 .search-box{float: right; padding: 8px 20px 2px 10px;}
 .search-box input {
 	font-size: 16px;
@@ -74,9 +74,7 @@ a:active.button-link{color: #ffffff; background-color: #035D67;box-shadow: 0px 0
 :-ms-input-placeholder{font-style:italic; color:#035D67}
 :-moz-placeholder {font-style:italic; color:#035D67}
 
-.promo-content {
-    /* background: url(images/photos/father_carry_child.jpg) center;  */
-    background-size: cover; min-height: 460px; padding-top: 120px;}
+.promo-content {background: url(images/photos/father_carry_child.jpg) center; background-size: cover; min-height: 460px; padding-top: 120px;}
 .promo-content h1 {font-size: 400%; color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.6)}
 .promo-content h2, .promo-content h3 {color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.6)}
 
@@ -144,7 +142,7 @@ h4.accord {
 }
 
 h4.accord:first-of-type {margin-top: 40px;}
-/* h4.accord:last-of-type {margin-bottom: 60px;} */
+h4.accord:last-of-type {margin-bottom: 60px;}
 h4.accord:hover {color: #ffffff; background-color: #035d67;}
 h4.accord.active {background-color: #035D67; color: #ffffff;}
 
@@ -165,23 +163,393 @@ h4.accord:before{background: transparent  url("images/plusminusv.png") 0 0 no-re
 h4.accord:hover:before {background: transparent url("images/plusminusv.png") 0 -20px no-repeat; background-size: 20px;}
 h4.accord.active:before {background: transparent url("images/plusminusv.png") 0 -40px no-repeat; background-size: 20px;}
 
-div#accord_section {
-    padding: 20px 60px;
-    /* padding: 0px 18px; */
-    background-color: white;
-        /* max-height: 0; */
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;}
+div.accord {padding: 20px 60px;}
 
-div.panel {
-    padding: 20px 60px;
-    /* padding: 0px 18px; */
-    background-color: white;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;}
-        
 /*tiles*/
+
+/*** replacing css**/
+.content {
+    padding-top: 45px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.herotitle {
+    font-size: 1.3em;
+    margin: 0 48px 6px;
+    font-weight: 700;
+}
+/* line 2, ../sass/partials/_hero.scss */
+.hero {
+    width: auto;
+    /* margin: 0 40px 50px; */
+}
+/* line 4, ../sass/partials/_hero.scss */
+.hero .tileboxbt {
+    margin: 0 6px;
+    position: relative;
+    background-size: cover;
+    background-position: 50% top;
+    background-repeat: no-repeat;
+    /* border: solid 1px #ddd; */
+}
+/* line 9, ../sass/partials/_hero.scss */
+/* .hero .tileboxbt .text-mask {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.28);
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));/* Standard syntax */
+} */
+/* line 12, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-cvs-yellow {
+    background-color: #F3DA23;
+}
+/* line 26, ../sass/partials/_mixins.scss */
+.hero .tileboxbt.boxbg-cvs-yellow:hover {
+    background-color: #F5E04B;
+}
+/* line 13, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-cvs-green {
+    background-color: #74AD0A;
+}
+/* line 26, ../sass/partials/_mixins.scss */
+.hero .tileboxbt.boxbg-cvs-green:hover {
+    background-color: #85C70C;
+}
+/* line 14, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-cvs-orange {
+    background-color: #EA7600;
+}
+/* line 26, ../sass/partials/_mixins.scss */
+.hero .tileboxbt.boxbg-cvs-orange:hover {
+    background-color: #ff9528;
+}
+/* line 15, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-cvs-purple {
+    background-color: #93277E;
+}
+/* line 26, ../sass/partials/_mixins.scss */
+.hero .tileboxbt.boxbg-cvs-purple:hover {
+    background-color: #c334a7;
+}
+/* line 16, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-cvs-turq {
+    background-color: #0085B2;
+}
+/* line 26, ../sass/partials/_mixins.scss */
+.hero .tileboxbt.boxbg-cvs-turq:hover {
+    background-color: #0095C6;
+}
+/* line 17, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-cvs-babyblue {
+    background-color: #B8E3EB;
+}
+/* line 26, ../sass/partials/_mixins.scss */
+.hero .tileboxbt.boxbg-cvs-babyblue:hover {
+    background-color: #e8f6f8;
+}
+/* line 18, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-cvs-lightgray {
+    background-color: #e1e1e1;
+}
+/* line 26, ../sass/partials/_mixins.scss */
+.hero .tileboxbt.boxbg-cvs-lightgray:hover {
+    background-color: white;
+}
+/* line 19, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-cvs-gray {
+    background-color: #D1CCCC;
+}
+/* line 26, ../sass/partials/_mixins.scss */
+.hero .tileboxbt.boxbg-cvs-gray:hover {
+    background-color: #eeecec;
+}
+/* line 20, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-cvs-medgray {
+    background-color: #8C8C8C;
+}
+/* line 26, ../sass/partials/_mixins.scss */
+.hero .tileboxbt.boxbg-cvs-medgray:hover {
+    background-color: #ababab;
+}
+/* line 21, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-cvs-darkgray {
+    background-color: #646464;
+}
+/* line 26, ../sass/partials/_mixins.scss */
+.hero .tileboxbt.boxbg-cvs-darkgray:hover {
+    background-color: #838383;
+}
+/* line 22, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-cvs-pink {
+    background-color: #FB7096;
+}
+/* line 26, ../sass/partials/_mixins.scss */
+.hero .tileboxbt.boxbg-cvs-pink:hover {
+    background-color: #fdacc2;
+}
+/* line 23, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-cvs-navy {
+    background-color: #00334B;
+}
+/* line 26, ../sass/partials/_mixins.scss */
+.hero .tileboxbt.boxbg-cvs-navy:hover {
+    background-color: #005d88;
+}
+/* line 24, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-cvs-red {
+    background-color: #B20000;
+}
+/* line 26, ../sass/partials/_mixins.scss */
+.hero .tileboxbt.boxbg-cvs-red:hover {
+    background-color: #CC0000;
+}
+/* line 26, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox {
+    min-height: 160px;
+    padding: 18px 0;
+    
+    /*
+      $direction: row | row-reverse | column |column-reverse
+      $wrap: nowrap | wrap | wrap-reverse
+      $justify: flex-start | flex-end | center | space-between | space-around
+      $valign: flex-start | flex-end | center | baseline | stretch
+  *//*display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;*/
+}
+/* line 27, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox h2 {
+    font-size: 1.3em;
+    font-weight: normal,
+}
+/* line 30, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox h2.text-white {
+    color: #fff;
+}
+/* line 31, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox h2.text-black {
+    color: #000;
+}
+/* line 35, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox.icon-video:before {
+    content: "";
+    background: transparent url("../img/icon.png") -77px -132px no-repeat;
+    background-size: 160px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 7px;
+    transform: translate(0%, 0%);
+}
+/* line 36, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox.icon-pdf:before {
+    content: "";
+    background: transparent url("../img/icon.png") -90px 0 no-repeat;
+    background-size: 120px;
+    width: 28px;
+    height: 36px;
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    transform: translate(0%, 0%);
+}
+/* line 39, ../sass/partials/_hero.scss */
+.hero .tileboxbt.align-bottom:hover {
+    opacity: 0.8;
+}
+/* line 40, ../sass/partials/_hero.scss
+.hero .tileboxbt.align-bottom .tilebox {
+/*
+      $direction: row | row-reverse | column |column-reverse
+      $wrap: nowrap | wrap | wrap-reverse
+      $justify: flex-start | flex-end | center | space-between | space-around
+      $valign: flex-start | flex-end | center | baseline | stretch
+  */
+  /*display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;*/
+/* } */ 
+/* line 43, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-logo, .hero .tileboxbt.transparency {
+    border-color: #ccc;
+}
+/* line 45, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-logo .text-mask, .hero .tileboxbt.transparency .text-mask {
+    display: none;
+}
+/* line 47, ../sass/partials/_hero.scss */
+.hero .tileboxbt.boxbg-logo .tilebox h2, .hero .tileboxbt.transparency .tilebox h2 {
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1180px) {
+/* line 53, ../sass/partials/_hero.scss */
+.herotitle {
+    margin-left: 34px;
+}
+/* line 54, ../sass/partials/_hero.scss */
+.hero {
+    width: auto;
+    margin: 0 0 50px;
+}
+/* line 56, ../sass/partials/_hero.scss */
+.hero .tileboxbt {
+    margin: 0 3px;
+}
+/* line 58, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox {
+    min-height: 132px;
+    padding: 10px 0;
+}
+/* line 59, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox h2 {
+    font-size: 1.1em;
+    padding: 0 10px;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+/* line 64, ../sass/partials/_hero.scss */
+.herotitle {
+    font-size: 1em;
+    margin-left: 34px;
+}
+/* line 65, ../sass/partials/_hero.scss */
+.hero {
+    width: auto;
+}
+/* line 67, ../sass/partials/_hero.scss */
+.hero .tileboxbt {
+    margin: 0 2px;
+}
+/* line 69, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox {
+    padding: 8px 0;
+}
+/* line 70, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox h2 {
+    font-size: 1em;
+    padding: 0 8px;
+}
+/* line 71, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox.icon-video:before {
+    content: "";
+    background: transparent url("../img/icon.png") 0 0 no-repeat;
+    background-size: 124px;
+    width: 39px;
+    height: 39px;
+}
+/* line 72, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox.icon-pdf:before {
+    content: "";
+    background: transparent url("../img/icon.png") -67px 0 no-repeat;
+    background-size: 90px;
+    width: 22px;
+    height: 27px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+/* line 77, ../sass/partials/_hero.scss */
+.herotitle {
+    font-size: .9em;
+    margin-left: 6px;
+}
+/* line 78, ../sass/partials/_hero.scss */
+.hero {
+    width: auto;
+    margin: 0 0 20px;
+}
+/* line 81, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox {
+    min-height: 100px;
+}
+/* line 82, ../sass/partials/_hero.scss */
+.hero .tileboxbt .tilebox h2 {
+    font-size: .9em;
+}
+}
+
+/* slick override */
+/* line 3, ../sass/partials/_components.scss */
+.slick-prev:before, .slick-next:before {
+    color: #999 !important;
+    opacity: .6 !important;
+    font-size: 28px !important;
+}
+/* line 4, ../sass/partials/_components.scss */
+.slick-prev:hover:before, .slick-next:hover:before {
+    opacity: 1 !important;
+}
+/* line 5, ../sass/partials/_components.scss */
+.slick-disabled {
+    visibility: hidden;
+}
+/* line 7, ../sass/partials/_components.scss */
+.slick-prev, .slick-next {
+    width: 34px !important;
+    height: 34px !important;
+    padding: 0;
+}
+/* line 15, ../sass/partials/_components.scss */
+.slick-prev {
+    left: -33px;
+}
+/* line 18, ../sass/partials/_components.scss */
+.slick-prev:before {
+    content: '';
+    width: 34px;
+    height: 34px;
+    display: block;
+    background: transparent url("../img/icon.png") 9px -44px no-repeat;
+    background-size: 112px;
+}
+/* line 21, ../sass/partials/_components.scss */
+.slick-next {
+    right: -33px;
+}
+/* line 24, ../sass/partials/_components.scss */
+.slick-next:before {
+    content: '';
+    width: 34px;
+    height: 34px;
+    display: block;
+    background: transparent url("../img/icon.png") -24px -44px no-repeat;
+    background-size: 112px;
+}
+
+
+
+
+
 a.tileboxbt{
 	display: inline-block;
 	width: 286px;
@@ -205,7 +573,7 @@ a:nth-of-type(4n).tileboxbt{border-radius: 0 0 40px 0;}
 a:hover.tileboxbt{background-color: rgba(3,93,103, 0.8);}
 
 .tilebox {display: table; position: relative; width: 100%; min-height: 161px; padding-top: 20px;}
-.tilebox-inner{display: table-cell; vertical-align: bottom;}
+.tilebox-inner{display: table-cell; vertical-align: bottom;text-align: center;}
 .tilebox h2 {display: block; background-color: rgba(3,93,103, 0.60); padding: 10px; margin: 0; color: #ffffff; font-size: 14px; text-shadow: 1px 1px 2px rgba(0,0,0,0.4)}
 
 a:hover.tileboxbt .tilebox h2 {display: block; background-color: rgba(3,93,103, 0.90); padding: 10px; margin: 0; color: #ffffff; font-size: 14px;}
@@ -214,21 +582,21 @@ a:hover.tileboxbt .tilebox h2 {display: block; background-color: rgba(3,93,103, 
 .tilebox-content h1, .tilebox-content h2, .tilebox-content h3 {color: #ffffff; padding: 0; line-height: 1.2; margin: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.4)}
 
 
-#moreDetail a.tileboxbt{background-color:rgba(122,166,55, 1.0); border-radius: 0px 0px 0px 40px;}
-#moreDetail a:nth-of-type(2n).tileboxbt{border-radius: 40px 0 0 0;}
-#moreDetail a:nth-of-type(3n).tileboxbt{border-radius: 0 0 40px 0;}
-#moreDetail a:nth-of-type(4n).tileboxbt{border-radius: 0 40px 0 0;}
-#moreDetail a:hover.tileboxbt{background-color:rgba(122,166,55, 0.8);}
-#moreDetail .tilebox h2{background-color: rgba(122,166,55, 0.60);}
-#moreDetail a:hover.tileboxbt .tilebox h2{background-color: rgba(122,166,55, 0.90);}
+#decide1 a.tileboxbt{background-color:rgba(122,166,55, 1.0); border-radius: 0px 0px 0px 40px;}
+#decide1 a:nth-of-type(2n).tileboxbt{border-radius: 40px 0 0 0;}
+#decide1 a:nth-of-type(3n).tileboxbt{border-radius: 0 0 40px 0;}
+#decide1 a:nth-of-type(4n).tileboxbt{border-radius: 0 40px 0 0;}
+#decide1 a:hover.tileboxbt{background-color:rgba(122,166,55, 0.8);}
+#decide1 .tilebox h2{background-color: rgba(122,166,55, 0.60);}
+#decide1 a:hover.tileboxbt .tilebox h2{background-color: rgba(122,166,55, 0.90);}
 	
-#otherCon a.tileboxbt{background-color: rgba(220,96,22, 1.0); border-radius: 40px 0 0 0;}
-#otherCon a:nth-of-type(2n).tileboxbt{border-radius: 0 0 40px 0;}
-#otherCon a:nth-of-type(3n).tileboxbt{border-radius: 0 40px 0 0;}
-#otherCon a:nth-of-type(4n).tileboxbt{border-radius: 0 0 0 40px;}
-#otherCon a:hover.tileboxbt{background-color: rgba(220,96,22, 0.8);}
-#otherCon .tilebox h2{background-color: rgba(220,96,22, 0.60);}
-#otherCon a:hover.tileboxbt .tilebox h2{background-color: rgba(220,96,22, 0.90);}
+#enroll1 a.tileboxbt{background-color: rgba(220,96,22, 1.0); border-radius: 40px 0 0 0;}
+#enroll1 a:nth-of-type(2n).tileboxbt{border-radius: 0 0 40px 0;}
+#enroll1 a:nth-of-type(3n).tileboxbt{border-radius: 0 40px 0 0;}
+#enroll1 a:nth-of-type(4n).tileboxbt{border-radius: 0 0 0 40px;}
+#enroll1 a:hover.tileboxbt{background-color: rgba(220,96,22, 0.8);}
+#enroll1 .tilebox h2{background-color: rgba(220,96,22, 0.60);}
+#enroll1 a:hover.tileboxbt .tilebox h2{background-color: rgba(220,96,22, 0.90);}
 
 /** RWD */
 .rwd-tester {display: none; position:fixed; top: 0; right: 0; width: 50px; height: 50px; z-index: 99999999}	
@@ -277,7 +645,7 @@ p {	margin: 0 0 10px; }
 .site-content {padding: 20px;}
 .content-left, .content-right {display: block; width: 100%;}
 .video-container {padding-bottom: 20px;}
-div.panel {padding: 20px;}
+div.accord {padding: 20px;}
 
 .site-footer{padding: 20px}
 .footer-logo, .footer-tagline {float: none;  margin: 0 auto}
