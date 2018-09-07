@@ -78,7 +78,7 @@
    "title": "Choose Tour Medical Insurance Carrier ",
    "tags": ["HSA","health","savings","account","save","saving","tax","benefit","paying","pay","debit","card","qualified","medical","expense","contribute","contribution","deductible","reimbursement","Savers","Savers Plan","Basic","Basic Plan"],
    "status": ["ft","ftk"],
-   "related": ["24","25","15","16","40","105"],
+   "related": ["15","26","1","16"],
    "tile_category":"2",
    "tile_category_position":"2",
    "bg_img": true,
@@ -97,7 +97,7 @@
    "tile_category_position":"3",
    "bg_img": true,
    "bg_img_url": "",
-   "bg_class": "#decide1 a.tileboxbt",
+   "bg_class": "",
  "icon":"" },
 
  {

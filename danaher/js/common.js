@@ -28,9 +28,9 @@ $(document).ready(function() {
     });
 })
 
-// $(document).ready(function() {
-//     $('.drawer').drawer();
-// });
+$(document).ready(function() {
+    $('.drawer').drawer();
+});
 
 $( function() {
     $( "#accordion" ).accordion({
@@ -699,7 +699,7 @@ if (version_pass) {
             if (name == 'user_status')
                 language = doc_cookie[i].split("=")[1];
         }
-      ourRequest.open('GET', 'js/kohlsContent.json');
+      ourRequest.open('GET', 'js/danaherContent.json');
    
 
         ourRequest.onload = function() {
