@@ -32,7 +32,7 @@
 
  {
    "id":"10",
-   "filename": "whos-eligible-ft.html",
+   "filename": "benefits_webinar.html",
    "title": "Benefits Webinar",
    "tags": ["eligibility","eligible","spouse","dependent","child","SPD","summary","plan","description","qualify","benefit","health","welfare","cover","Associate","require","sex","same","domestic","partner","documentation"],
    "status": ["ft"],
@@ -46,7 +46,7 @@
  
  {
    "id":"13",
-   "filename": "plan-summaries-ftkpt.html",
+   "filename": "top_10_questions.html",
    "title": "Top 10 Questions",
    "tags": "",
    "status": ["ft","ftk"],
@@ -60,7 +60,7 @@
  
  {
    "id":"15",
-   "filename": "medical-rx-ft.html",
+   "filename": "medical_plan_prices.html",
    "title": "Medical Plan Pricing",
    "tags": ["medical","Savers","Savers Plan","Basic","Basic Plan","Exclusive Provider Plan","Exclusive","EPP","HSA","reimbursement","prescription","drug","preventive","non-preventive","carrier","Anthem","UnitedHealthcare","UHC","Tier 1","Blue Distinction +","pays","pay","contribute","contribution","expense","deductible","out-of-pocket","maximum","annual","coinsurance","pay","paycheck","in-network","out-of-network","network","generic","brand","formulary","non-formulary","primary","care","specialist","specialty","tax-free","doctor","visit","hospital","health","copay","retail","mail","order","pharmacy","preventive","care","Telemedicine","Teladoc","CVS","benefit","insurance"],
    "status": ["ft"],
@@ -74,7 +74,7 @@
 
  {
    "id":"23",
-   "filename": "hsa-ftk.html",
+   "filename": "medical_insurance_carrier.html",
    "title": "Choose Tour Medical Insurance Carrier ",
    "tags": ["HSA","health","savings","account","save","saving","tax","benefit","paying","pay","debit","card","qualified","medical","expense","contribute","contribution","deductible","reimbursement","Savers","Savers Plan","Basic","Basic Plan"],
    "status": ["ft","ftk"],
@@ -88,7 +88,7 @@
 
  {
    "id":"26",
-   "filename": "telemed-rx-ft.html",
+   "filename": "silver_gold_medical.html",
    "title": "Silver and Gold<br>Medical Plans",
    "tags": ["telemedicine","Teladoc","Teledoc","24/7","access","phone","routine","health","issue","add-on","urgent","care","emergency","room","benefit"],
    "status": ["ft"],
@@ -97,12 +97,12 @@
    "tile_category_position":"3",
    "bg_img": true,
    "bg_img_url": "",
-   "bg_class": "",
+   "bg_class": "#decide1 a.tileboxbt",
  "icon":"" },
 
  {
    "id":"31",
-   "filename": "accident-critical-illness-ftk.html",
+   "filename": "act_now_HSA.html",
    "title": "Act now if you have an HSA ",
    "tags": ["extra","financial","support","supplemental","critical","illness","accident","protection","hospital","cash","benefit","out-of-pocket","injury","accidental","emergency"],
    "status": ["ft","ftk"],
@@ -115,7 +115,7 @@
  "icon":"" },
  {
    "id":"32",
-   "filename": "dental-ftk.html",
+   "filename": "california.html",
    "title": "California",
    "tags": ["dental","Delta","standard","buy-up","dentist","in-network","out-of-network","coinsurance","deductible","annual","maximum","preventive","diagnostic","cleanings","exams","basic","major","orthodontia","orthodontics","lifetime","maximum","waiting","period","benefit","insurance"],
    "status": ["ft","ftk"],
@@ -129,7 +129,7 @@
 
  {
    "id":"36",
-   "filename": "vision-ft.html",
+   "filename": "hawaii.html",
    "title": "Hawaii",
    "tags": ["vision","plan","UnitedHealthcare","UHC","standard","buy-up","network","provider","copay","lens","frame","plan","year","allowance","contact","doctor","glasses","eye","benefit","insurance"],
    "status": ["ft"],
@@ -143,7 +143,7 @@
 
  {
    "id":"40",
-   "filename": "fsa-ft.html",
+   "filename": "expatriates.html",
    "title": "U.S.Expatriates ",
    "tags": ["flexible","spending","account","FSA","YSA","plan","year","tax","pretax","pre-tax","dollar","contribution","before-tax","tax-free","health","care","dependent","spouse","expense","amount","deductible","limited","purpose","LPFSA","health","savings","HSA","medical","dental","vision","prescription","child","care","adult"],
    "status": ["ft"],
@@ -171,7 +171,7 @@
 
  {
    "id":"65",
-   "filename": "use-your-hsa-ft.html",
+   "filename": "health_savings_account.html",
    "title": "HSA",
    "tags": ["HSA"," health"," savings"," account","timing","Savers","Basic","credit","card","spending","flexible","spending","account","FSA","checking","cash","CDHP","HDHP"],
    "status": ["ft"],
@@ -185,7 +185,7 @@
 
  {
    "id":"68",
-   "filename": "find-a-provider-ft.html",
+   "filename": "health_care_FSA.html",
    "title": "Health Care FSA",
    "tags": ["Anthem","UnitedHealthcare","UHC","Kaiser","Delta","provider","medical","dental","vision","in-network","doctor","dentist"],
    "status": ["ft"],
@@ -199,7 +199,7 @@
 
  {
    "id":"74",
-   "filename": "lower-your-costs-ft.html",
+   "filename": ".html",
    "title": "Dependent Care FSA",
    "tags": ["tobacco-free","tobacco","cessation","program","working","spouse","premium","Savers","Basic","CDHP","Consumer-Driven","Savers","healthy","steps","preventive","physical","in-network","employee","assistance","program","EAP","Healthy","Rewards","medical","premium","credit","points","prizes","Well-being","challenges","cost","estimates","generic","maintenance","flexible","spending","account","FSA","health","savings","account"," HSA","tax-free","commuter","transportation","parking","perks","smoking"],
    "status": ["ft"],
@@ -213,7 +213,7 @@
 
  {
    "id":"77",
-   "filename": "spend-smarter-ft.html",
+   "filename": "dental_vision.html",
    "title": "Dental and Vision",
    "tags": ["timing","preventive","questions","research","prices","location","alternative","options","credit","card","spending","flexible","spending","account","FSA","checking","cash"],
    "status": ["ft"],
@@ -227,7 +227,7 @@
 
  {
    "id":"80",
-   "filename": "retirement-savings-ftk.html",
+   "filename": "supplemental_benefits.html",
    "title": "Supplemental Benefits",
    "tags": ["future","fund","390(k)","plan","pretax","pre-tax","before-tax","contribution","contribute","match","matching","eligible","pay","quarterly","service","paycheck","IRS","limit","Internal","Revenue","Service","investment","retirement","savings","plan","tax","advantage"],
    "status": ["ft","ftk"],
@@ -241,7 +241,7 @@
 
  {
    "id":"84",
-   "filename": "life-solutions-ftkpt.html",
+   "filename": "life_accident_insurance.html",
    "title": "Life and Accident Insurance",
    "tags": "",
    "status": ["ft","ftk"],
@@ -255,7 +255,7 @@
  
  {
    "id":"87",
-   "filename": "eap-ftk.html",
+   "filename": "disability.html",
    "title": "Disability Benefits ",
    "tags": ["free","professional","confidential","counseling","family","relationships","child","elder","care","stress","finances","education","EAP","ComPsych","GuidanceResources"],
    "status": ["ft","ftk"],

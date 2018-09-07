@@ -74,7 +74,9 @@ a:active.button-link{color: #ffffff; background-color: #035D67;box-shadow: 0px 0
 :-ms-input-placeholder{font-style:italic; color:#035D67}
 :-moz-placeholder {font-style:italic; color:#035D67}
 
-.promo-content {background: url(images/photos/father_carry_child.jpg) center; background-size: cover; min-height: 460px; padding-top: 120px;}
+.promo-content {
+    background: url(/images/photos/father_carry_child.jpg) center;
+     background-size: cover; min-height: 460px; padding-top: 120px;}
 .promo-content h1 {font-size: 400%; color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.6)}
 .promo-content h2, .promo-content h3 {color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.6)}
 
@@ -146,7 +148,7 @@ h4.accord:last-of-type {margin-bottom: 60px;}
 h4.accord:hover {color: #ffffff; background-color: #035d67;}
 h4.accord.active {background-color: #035D67; color: #ffffff;}
 
-h4.accord:before, h3.accord.active:before  {
+h4.accord:before, h3.panel.active:before  {
     opacity: 1;
     transition: 0.4s;
     content: "";
@@ -564,15 +566,16 @@ a.tileboxbt{
 	overflow: hidden;
 	text-decoration: none;
 	text-align: center;
-	border-radius: 0px 40px 0px 0px; /* top left, top right, bottom right, bottom left */
+	border-radius: 0px 40px 0px 0px; /*top left, top right, bottom right, bottom left */
 }
 
+a:nth-of-type(1n).tileboxbt.h3{ background:beige; }
 a:nth-of-type(2n).tileboxbt{border-radius: 0 0 0 40px;}
 a:nth-of-type(3n).tileboxbt{border-radius: 40px 0 0 0;}
 a:nth-of-type(4n).tileboxbt{border-radius: 0 0 40px 0;}
-a:hover.tileboxbt{background-color: rgba(3,93,103, 0.8);}
+/* a:hover.tileboxbt{background-color: rgba(3,93,103, 0.8);} */
 
-.tilebox {display: table; position: relative; width: 100%; min-height: 161px; padding-top: 20px;}
+.tilebox {display: table; position: relative; width: 100%; min-height: 140px; padding-top: 18px;}
 .tilebox-inner{display: table-cell; vertical-align: bottom;text-align: center;}
 .tilebox h2 {display: block; background-color: rgba(3,93,103, 0.60); padding: 10px; margin: 0; color: #ffffff; font-size: 14px; text-shadow: 1px 1px 2px rgba(0,0,0,0.4)}
 
@@ -645,7 +648,7 @@ p {	margin: 0 0 10px; }
 .site-content {padding: 20px;}
 .content-left, .content-right {display: block; width: 100%;}
 .video-container {padding-bottom: 20px;}
-div.accord {padding: 20px;}
+div.panel {padding: 20px;}
 
 .site-footer{padding: 20px}
 .footer-logo, .footer-tagline {float: none;  margin: 0 auto}
