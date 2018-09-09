@@ -21,11 +21,18 @@ http://www.tipue.com/drop
 }
 #tipue_drop_content {
     display: none;
-    position: relative;
+    position: absolute;
     margin: 13px 20px 0 0;
     line-height: 0;
     z-index: 1000;
     text-align: center;
+    right: 0;
+    top: 73px;
+    margin-right: 122px;
+    width: 396px;
+}
+.tipue_suggestion {
+    margin: 18px;
 }
 .tipue_drop_box {
     position: relative;

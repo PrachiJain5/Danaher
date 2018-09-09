@@ -295,7 +295,7 @@ h4.accord {
 }
 
 h4.accord:first-of-type {margin-top: 40px;}
-h4.accord:last-of-type {margin-bottom: 60px;}
+/* h4.accord:last-of-type {margin-bottom: 60px;} */
 h4.accord:hover {color: #ffffff; background-color: #035d67;}
 h4.accord.active {background-color: #035D67; color: #ffffff;}
 
@@ -644,10 +644,14 @@ div.accord {padding: 20px 60px;}
 /* line 81, ../sass/partials/_hero.scss */
 .hero .tileboxbt .tilebox {
     min-height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 /* line 82, ../sass/partials/_hero.scss */
 .hero .tileboxbt .tilebox h2 {
     font-size: .9em;
+    padding: 10px;
 }
 }
 
@@ -728,10 +732,26 @@ a:hover.tileboxbt{background-color: rgba(3,93,103, 0.8);}
 
 .tilebox {display: table; position: relative; width: 100%; min-height: 140px; padding-top: 18px;}
 .tilebox-inner{display: table-cell; vertical-align: bottom;text-align: center;}
-.tilebox h2 {display: block; background-color: rgba(3,93,103, 0.60); padding: 10px; margin: 0; color: #ffffff; font-size: 14px; text-shadow: 1px 1px 2px rgba(0,0,0,0.4)}
-
-a:hover.tileboxbt .tilebox h2 {display: block; background-color: rgba(3,93,103, 0.90); padding: 10px; margin: 0; color: #ffffff; font-size: 14px;}
-
+.tilebox h2 {
+    display: block;
+    background-color: rgba(3,93,103, 0.60);
+    padding: 10px;
+    margin: -1px;
+    color: #ffffff;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+a:hover.tileboxbt .tilebox h2 {
+    display: block;
+    background-color: rgba(3,93,103, 0.90);
+    padding: 13px;
+    margin: -1px;
+    color: #ffffff;
+    font-size: 14px;
+}
 .tilebox-content {padding: 10px 20px ; text-align: left;}
 .tilebox-content h1, .tilebox-content h2, .tilebox-content h3 {color: #ffffff; padding: 0; line-height: 1.2; margin: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.4)}
 
