@@ -629,7 +629,21 @@ div.accord {padding: 20px 60px;}
     height: 27px;
 }
 }
+@media only screen and (max-width: 768px) {
+    #tipue_drop_content {
+        margin: 2px !important;
+        right: 0 !important;
+        top: 80px;
+        margin-right: 0;
+        width: 396px;
+    }
+}
+@media only screen and (max-width: 585px) {
+    .slick-prev, .slick-next{
+        display: none !important;
+    }
 
+}
 @media only screen and (max-width: 600px) {
 /* line 77, ../sass/partials/_hero.scss */
 #tipue_drop_content {
