@@ -76,12 +76,27 @@ function showEnrolDays(){
 				var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
 				var firstDate = new Date();
 				console.log(firstDate)
-				var secondDate = new Date("Nov 1, 2018 12:00:00");
+				var secondDate = new Date("Sep 15, 2018 12:00:00");
 				console.log(secondDate)
 
 				var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
 				console.log(diffDays)
-				$("#daysToEnroll").html(diffDays+"days To Enroll")
+				
+                if(diffDays==1){
+                    $("#daysToEnroll").html(diffDays)
+                    $("#days").html("day To Enroll")
+
+                }else{
+                    $("#daysToEnroll").html(diffDays);
+                    $("#days").html("day To Enroll")
+
+
+                }
+                if(diffDays==0){
+                    $(".utility-nav").css("visibility","visible");
+                    $("#daysToEnroll").css("display","none");
+                    $(".pw").css("display","block")
+                }
 			};
 		
 			showEnrolDays()

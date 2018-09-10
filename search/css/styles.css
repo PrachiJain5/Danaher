@@ -852,3 +852,12 @@ div.panel {padding: 20px;}
 
 
 }
+div#dateDiv h1 {
+    margin: 0;
+}
+div#dateDiv  {
+    margin-left:40px;
+}
+h1#days {
+    font-size: 33px;
+}
