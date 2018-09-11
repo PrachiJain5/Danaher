@@ -693,7 +693,25 @@ div.accord {padding: 20px 60px;}
     #tipue_drop_content {
         right: 0;
         top: 74px !important;
-        margin-right: 22px;
+        margin-right: 22px !important;
+        width: 354px;
+    }
+    
+}
+@media only screen and (min-width: 1440px) {
+    #tipue_drop_content {
+        right: 0;
+        top: 74px !important;
+        margin-right: 102px !important;
+        width: 354px;
+    }
+    
+}
+@media only screen and (min-width: 1530px) {
+    #tipue_drop_content {
+        right: 0;
+        top: 74px !important;
+        margin-right: 142px !important;
         width: 354px;
     }
     
@@ -732,7 +750,9 @@ div.accord {padding: 20px 60px;}
     padding: 10px;
 }
 }
-
+div#tipue_drop_content {
+    margin-right: 142px;
+}
 /* slick override */
 /* line 3, ../sass/partials/_components.scss */
 .slick-prev:before, .slick-next:before {
