@@ -88,7 +88,7 @@ function showEnrolDays(){
 
                 }else{
                     $("#daysToEnroll").html(diffDays);
-                    $("#days").html("day To Enroll")
+                    $("#days").html("days To Enroll")
 
 
                 }

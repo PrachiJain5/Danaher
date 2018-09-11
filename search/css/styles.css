@@ -637,12 +637,30 @@ div.accord {padding: 20px 60px;}
         margin-right: 0;
         width: 396px;
     }
+    .hero .tileboxbt .tilebox h2 {
+        font-size: 1em;
+        padding: 15px 8px;
+    }
+    .tilebox {
+        position: absolute;
+        bottom: 0;
+    }
 }
 @media only screen and (max-width: 585px) {
     .slick-prev, .slick-next{
         display: none !important;
     }
 
+}
+@media only screen and (max-width: 1180px) {
+    .hero .tileboxbt .tilebox h2 {
+        font-size: 1em;
+        padding: 15px 8px;
+    }
+    .tilebox {
+        position: absolute !important;
+        bottom: 0;
+    }
 }
 @media only screen and (max-width: 600px) {
 /* line 77, ../sass/partials/_hero.scss */
