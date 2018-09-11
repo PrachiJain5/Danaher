@@ -689,11 +689,12 @@ div.accord {padding: 20px 60px;}
         top: 147px !important;
         }
 }
+
 @media only screen and (min-width: 1024px) {
     #tipue_drop_content {
         right: 0;
         top: 74px !important;
-        margin-right: 22px !important;
+        margin-right: 22px ;
         width: 354px;
     }
     
@@ -702,12 +703,12 @@ div.accord {padding: 20px 60px;}
     #tipue_drop_content {
         right: 0;
         top: 74px !important;
-        margin-right: 102px !important;
+        margin-right: 102px;
         width: 354px;
     }
     
 }
-@media only screen and (min-width: 1530px) {
+@media only screen and (min-width: 1536px) {
     #tipue_drop_content {
         right: 0;
         top: 74px !important;
@@ -716,6 +717,17 @@ div.accord {padding: 20px 60px;}
     }
     
 }
+
+@media only screen and (min-width: 1366px) {
+    #tipue_drop_content {
+        right: 0;
+        top: 74px !important;
+        margin-right: 102px ;
+        width: 354px;
+    }
+    
+}
+
 @media only screen and (max-width: 600px) {
 /* line 77, ../sass/partials/_hero.scss */
 #tipue_drop_content {
@@ -750,9 +762,7 @@ div.accord {padding: 20px 60px;}
     padding: 10px;
 }
 }
-div#tipue_drop_content {
-    margin-right: 142px;
-}
+
 /* slick override */
 /* line 3, ../sass/partials/_components.scss */
 .slick-prev:before, .slick-next:before {
