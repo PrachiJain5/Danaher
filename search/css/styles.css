@@ -659,7 +659,7 @@ div.accord {padding: 20px 60px;}
     #tipue_drop_content {
         margin:0 !important;
         right: 0 !important;
-        top: 193px !important;
+        top: 193px ;
         margin-right: 0;
         width: 396px;
     }
