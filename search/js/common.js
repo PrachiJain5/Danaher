@@ -78,7 +78,21 @@ function showEnrolDays(){
 
 showEnrolDays()
 $(window).resize()
-
+$(window).on('resize',function(){
+    console.log($(screen)[0].width)
+    if($(screen)[0].width>=769){
+        console.log("lets Start")
+        var element = $("#tipue_drop_content");
+        var pos= $("#tipue_search_input").position();
+        element.css({"left":pos.left-18,top:pos.top+40,width:"353px"})
+        
+        console.log(pos)
+    }
+    else{
+        location.reload()
+    }
+    
+})
 // Get IE or Edge browser version
 var version = detectIE();
 var version_pass = false;
