@@ -28,7 +28,7 @@ if (environmentString.substring(0,3) == "qa.") {
 }  else if (environmentString.substring(0,3) == "qc.") {
     returnValue="UA-51404617-1"; 
 } else  {
-    returnValue="UA-31873580-3"; // Replace as appropriate with Production Property Id
+    returnValue="UA-31873580-61"; // Replace as appropriate with Production Property Id
 }
 return returnValue;  
 }

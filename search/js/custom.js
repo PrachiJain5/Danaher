@@ -8,20 +8,8 @@
                 $("#searchbar").removeClass("active");
             }
         });
-        $(document).scroll(function() {
-            if ($(document).scrollTop() > 200) {
-                $("#totop").css("bottom", "18px");
-            } else {
-                $("#totop").css("bottom", "-200px");
-            }
-        });
-
-        $("#totop").click(function() {
-            $('html, body').animate({
-                scrollTop: $("body").offset().top
-            }, 800)
-        });
-    })
+      
+    });
 $(window).load(function () {
     //FIND links that start with http
 

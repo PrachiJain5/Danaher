@@ -1,20 +1,10 @@
 
 /*load header*/
-$('#inc-menu').load('navbar.html')
+// $('#inc-menu').load('navbar.html')
 $('#inc-header').load('header.html');
-$('#inc-footer').load('footer.html');
+// $('#inc-footer').load('footer.html');
 
 
-$(document).ready(function() {
-    // $('#tipue_search_input').tiles();
-    // $(document).scroll(function() {
-    //     // Sticky search bar
-    //     if ($(document).scrollTop() > 76) {
-    //         $("#searchbar").addClass("active");
-    //     } else {
-    //         $("#searchbar").removeClass("active");
-    //     }
-    // });
     $(document).scroll(function() {
         if ($(document).scrollTop() > 200) {
             $("#totop").css("bottom", "18px");
@@ -28,7 +18,7 @@ $(document).ready(function() {
             scrollTop: $("body").offset().top
         }, 800)
     });
-})
+
 
 $(document).ready(function() {
     $('.drawer').drawer();
@@ -55,54 +45,39 @@ $( function() {
 
 
 
-var acc = document.getElementsByClassName("accordion");
-// var i;
 
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var panel = this.nextElementSibling;
-//     if (panel.style.maxHeight){
-//       panel.style.maxHeight = null;
-//     } else {
-//       panel.style.maxHeight = panel.scrollHeight + "px";
-//     } 
-//   });
-// }
-
-
-
-function showEnrolDays(){
-				var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
-				var firstDate = new Date();
-				console.log(firstDate)
-				var secondDate = new Date("Sep 15, 2018 12:00:00");
-				console.log(secondDate)
-
-				var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
-				console.log(diffDays)
-				
-                if(diffDays==1){
-                    $("#daysToEnroll").html(diffDays)
-                    $("#days").html("day To Enroll")
-
-                }else{
-                    $("#daysToEnroll").html(diffDays);
-                    $("#days").html("days To Enroll")
-
-
-                }
-                if(diffDays==0){
-                    $(".utility-nav").css("visibility","visible");
-                    $("#daysToEnroll").css("display","none");
-                    $(".pw").css("display","block")
-                }
-			};
-		
-			showEnrolDays()
-			$(window).resize()
     
 
+function showEnrolDays(){
+    var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+    var firstDate = new Date();
+    console.log(firstDate)
+    var secondDate = new Date("sep 12, 2018 12:00:00");
+    console.log(secondDate)
+
+    var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+    console.log(diffDays)
+    
+    if(diffDays==1){
+        $("#daysToEnroll").html(diffDays)
+        $("#days").html("day until Annual Enrollment begins")
+
+    }else{
+        $("#daysToEnroll").html(diffDays);
+        $("#days").html("days until Annual Enrollment begins")
+
+
+    }
+    if(diffDays==0){
+        $(".utility-nav").css("visibility","visible");
+        $("#daysToEnroll").css("display","none");
+        $("#days").css("display","none");
+        $(".pw").css("display","block")
+    }
+};
+
+showEnrolDays()
+$(window).resize()
 
 // Get IE or Edge browser version
 var version = detectIE();

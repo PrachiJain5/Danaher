@@ -670,6 +670,7 @@ div.accord {padding: 20px 60px;}
     }
 
 }
+
 @media only screen and (max-width: 1180px) {
     .hero .tileboxbt .tilebox h2 {
         font-size: 1em;
@@ -689,12 +690,11 @@ div.accord {padding: 20px 60px;}
         top: 147px !important;
         }
 }
-
 @media only screen and (min-width: 1024px) {
     #tipue_drop_content {
         right: 0;
         top: 74px !important;
-        margin-right: 22px ;
+        margin-right: 22px;
         width: 354px;
     }
     
@@ -727,6 +727,7 @@ div.accord {padding: 20px 60px;}
     }
     
 }
+
 
 @media only screen and (max-width: 600px) {
 /* line 77, ../sass/partials/_hero.scss */
@@ -936,12 +937,46 @@ div.panel {padding: 20px;}
 
 
 }
-div#dateDiv h1 {
+/* div#dateDiv h1 {
     margin: 0;
-}
-div#dateDiv  {
+    /* font-size: 8em; */
+/* }  */
+/* div#dateDiv  {
     margin-left:40px;
+} */
+div#dateDiv {
+    padding-left: 120px;
 }
-h1#days {
+h1#daysToEnroll {
+    padding-top: 20px;
+}
+/* h1#days {
     font-size: 33px;
+} */
+
+div#vjs_video_3 {
+    border-top-right-radius: 40px;
 }
+
+table {
+    /*border-collapse: separate;*/
+    /*border-spacing: 1px;*/
+    border-bottom-width: thin;
+}
+
+table, th, td {
+    border: 1px solid gray;
+}
+/* th {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px; 
+    empty-cells: hide;
+}
+td {
+    text-align: center;
+    background-color: white;
+  padding-left: 10px;
+    padding-right: 10px; 
+  
+  } */
