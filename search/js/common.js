@@ -52,7 +52,7 @@ function showEnrolDays(){
     var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
     var firstDate = new Date();
     console.log(firstDate)
-    var secondDate = new Date("sep 12, 2018 12:00:00");
+    var secondDate = new Date("Sep 12, 2018 12:00:00");
     console.log(secondDate)
 
     var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
@@ -62,13 +62,11 @@ function showEnrolDays(){
         $("#daysToEnroll").html(diffDays)
         $("#days").html("day until Annual Enrollment begins")
 
-    }else{
+    }else if (diffDays>1){
         $("#daysToEnroll").html(diffDays);
         $("#days").html("days until Annual Enrollment begins")
-
-
     }
-    if(diffDays==0){
+    else if (diffDays==0){
         $(".utility-nav").css("visibility","visible");
         $("#daysToEnroll").css("display","none");
         $("#days").css("display","none");
@@ -79,16 +77,14 @@ function showEnrolDays(){
 showEnrolDays()
 $(window).resize()
 $(window).on('resize',function(){
-    console.log($(screen)[0].width)
-    if($(screen)[0].width>=769){
-        console.log("lets Start")
-        var element = $("#tipue_drop_content");
-        var pos= $("#tipue_search_input").position();
-        element.css({"left":pos.left-18,top:pos.top+40,width:"353px"})
+    var element = $("#tipue_drop_content");
+    var pos= $("#tipue_search_input").position();
         
-        console.log(pos)
-    }
+    if($(screen)[0].width>=769){
+        element.css({"left":pos.left-18,top:pos.top+40,width:"353px"})
+        }
     else{
+        element.css({"left":0})
         location.reload()
     }
     
