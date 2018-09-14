@@ -50,32 +50,49 @@ $( function() {
 
 function showEnrolDays(){
     var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
-    var firstDate = new Date();
-    console.log(firstDate)
-    var secondDate = new Date("Sep 12, 2018 12:00:00");
-    console.log(secondDate)
+    var enrollDate = new Date("Nov 1, 2018 12:00:00");
+    var todaysDate = new Date();
 
-    var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
-    console.log(diffDays)
-    
-    if(diffDays==1){
-        $("#daysToEnroll").html(diffDays)
-        $("#days").html("day until Annual Enrollment begins")
-
-    }else if (diffDays>1){
-        $("#daysToEnroll").html(diffDays);
-        $("#days").html("days until Annual Enrollment begins")
-    }
-    else if (diffDays==0){
+    if(todaysDate > enrollDate ){
         $(".utility-nav").css("visibility","visible");
         $("#daysToEnroll").css("display","none");
         $("#days").css("display","none");
         $(".pw").css("display","block")
+    }else{
+        var diffDays = Math.round(Math.abs((enrollDate.getTime() - todaysDate.getTime())/(oneDay)));
+    
+        if(diffDays==1){
+            $("#daysToEnroll").html(diffDays)
+            $("#days").html("day until Annual Enrollment begins")
+    
+        }else if (diffDays>1){
+            $("#daysToEnroll").html(diffDays);
+            $("#days").html("days until Annual Enrollment begins")
+        }
+        else if (diffDays==0){
+            $(".utility-nav").css("visibility","visible");
+            $("#daysToEnroll").css("display","none");
+            $("#days").css("display","none");
+            $(".pw").css("display","block")
+        }
     }
+   
 };
 
 showEnrolDays()
-$(window).resize()
+$(window).resize();
+
+document.body.onkeyup = function(e){
+    if(e.keyCode == 32){
+        //your code
+        var enteredValue = $("#tipue_search_input").val()
+        console.log(enteredValue)
+    }
+}
+$("#tipue_drop_content").on('click',function (event){
+    var clickedText = event.target.innerHTML;
+    console.log(clickedText)
+})
 $(window).on('resize',function(){
     var element = $("#tipue_drop_content");
     var pos= $("#tipue_search_input").position();
@@ -84,6 +101,7 @@ $(window).on('resize',function(){
         element.css({"left":pos.left-18,top:pos.top+40,width:"353px"})
         }
     else{
+        $('.page-header').css({'background-size':'80px'})
         element.css({"left":0})
         location.reload()
     }
