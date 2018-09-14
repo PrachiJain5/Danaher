@@ -83,7 +83,7 @@ showEnrolDays()
 $(window).resize();
 
 document.body.onkeyup = function(e){
-    if(e.keyCode == 32){
+    if(e.keyCode == 32 || $("#tipue_search_input").val().length >= 2){
         //your code
         var enteredValue = $("#tipue_search_input").val()
         console.log(enteredValue)
