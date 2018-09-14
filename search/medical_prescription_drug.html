@@ -27,15 +27,85 @@
 
 
 
-<body>
+<body class="drawer drawer--right">
+		<!-- <section id="inc-header"> </section> -->
+	<div class="rwd-tester"></div>
 	<div class="site-header pw">
-			<div class="utility-nav" style="visibility: hidden">Need Help? Visit <a href="http://MyDanaherBenefits.com"></a> </div>
-		<a class="home-link" href="index.html">home</a>
-		
-		<div class="search-box"><input type="text" id="tipue_search_input" autocomplete="off" placeholder="What can we help you with?"></div>
-		<div class="slide-nav"></div>
-		
-		</div>
+		<div class="utility-nav" style="visibility: hidden">Need Help? Visit <a href="http://MyDanaherBenefits.com">MyDanaherBenefits.com</a> </div>
+    <a class="home-link" href="#">home</a>
+
+  
+  <div id="searchwrapper">   
+    
+    <div id="searchbar" >
+      <div class="container">
+        <form name="" id="mainsearch-form">
+          <div class="speech">
+            <input type="text" id="tipue_search_input" autocomplete="off" placeholder="What can we help you with?">
+          </div>
+        </form>
+        <div id="tipue_drop_content"></div>
+        <!-- <input type="button" id="tipue_search_button"> -->
+        <div id="tipue_search_content">
+          <div id="tipue_search_loading"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="slide-nav"> <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button></div>
+
+   
+		<nav class="drawer-nav" role="navigation">
+			<ul class="drawer-menu">
+				<li><a class="drawer-brand" href="index.html">Menu</a></li>
+			 
+				 <li class="drawer-dropdown">
+					<a class="drawer-menu-item" data-target="#" href="index.html" data-toggle="dropdown" role="button" aria-expanded="false">The Big Picture <span class="drawer-caret"></span></a>
+					<ul class="drawer-dropdown-menu">
+						<li><a class="drawer-dropdown-menu-item" href="top_3_questions.html">3 things you need to Know</a></li>
+						<li><a class="drawer-dropdown-menu-item" href="enroll.html">Enroll November 1-20</a></li>
+			<li><a class="drawer-dropdown-menu-item" href="benefits_webinar.html">Benefits Webinar</a></li>
+			<li><a class="drawer-dropdown-menu-item" href="top_10_questions.html">Top 10 Quesetions</a></li>
+					</ul>
+				</li>
+				<li class="drawer-dropdown green">
+					<a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">A Closer Look <span class="drawer-caret"></span></a>
+					<ul class="drawer-dropdown-menu">
+						<li><a class="drawer-dropdown-menu-item" href="medical_plan_prices.html">Medical plan prices</a></li>
+						<li><a class="drawer-dropdown-menu-item" href="medical_insurance_carrier.html">Choose your medical insurance carrier</a></li>
+						<li><a class="drawer-dropdown-menu-item" href="silver_gold_medical.html">Silver and Gold medical plans</a></li>
+				 <li><a class="drawer-dropdown-menu-item" href="act_now_HSA.html">Act now if you have an HSA</a></li>
+				 <li><a class="drawer-dropdown-menu-item" href="california.html">California</a></li>
+				<li><a class="drawer-dropdown-menu-item" href="hawaii.html">Hawaii</a></li>
+				<li><a class="drawer-dropdown-menu-item" href="expatriates.html">U.S. Expatriates</a></li>
+					</ul>
+				</li>
+			 <li class="drawer-dropdown orange">
+					<a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">More Detail <span class="drawer-caret"></span></a>
+					<ul class="drawer-dropdown-menu">
+						<li><a class="drawer-dropdown-menu-item " href="medical_prescription_drug.html">Medical and prescription drug</a></li>
+						<li><a class="drawer-dropdown-menu-item" href="health_savings_account.html">HSA</a></li>
+						<li><a class="drawer-dropdown-menu-item" href="health_care_FSA.html">Health Care FSA</a></li>
+				 <li><a class="drawer-dropdown-menu-item" href="day_care_FSA.html">Dependent Day Care FSA</a></li>
+				 <li><a class="drawer-dropdown-menu-item" href="dental_vision.html">Dental and vision</a></li>
+				<li><a class="drawer-dropdown-menu-item" href="supplemental_benefits.html">Supplemental Benefits</a></li>
+				<li><a class="drawer-dropdown-menu-item" href="life_accident_insurance.html">Life &amp; accident insurance</a></li>
+					<li><a class="drawer-dropdown-menu-item" href="disability.html">Disability benefits</a></li>
+					<li><a class="drawer-dropdown-menu-item" href="other_benefits.html">Other benefits</a></li>
+					</ul>
+				</li>
+			 
+			
+			</ul>
+		</nav>
+      
+      <!-- <nav id="inc-menu"></nav> -->
+     
+      </div>
 	<div class="page-header"></div>
 	<div class="site-content pw">
 		
@@ -64,7 +134,7 @@
 				<tbody>
 				
 				  <tr>
-					<td scope="row" colspan="4"><b>Annual deductible</b>
+					<td class="table-light" scope="row" colspan="4"><b>Annual deductible</b>
 						<br>What you pay out of your own pocket before your insurance begins to pay a share of your costs (doesn’t include amounts taken out of your paycheck for health coverage)
 					</td>
 					</tr>
@@ -83,12 +153,12 @@
                   <br>$1,200</td>
                   
 				<tr>
-					<td ><b>Coinsurance</b><br>Amount you pay after you meet deductible</td>
-					<td colspan="3"><center>You pay 20%</center></td>
+					<td class="table-light" ><b>Coinsurance</b><br>Amount you pay after you meet deductible</td>
+					<td class="table-light" colspan="3"><center>You pay 20%</center></td>
                   </tr>
                   
 				  <tr>
-                        <td scope="row" colspan="4"><b>Annual out-of-pocket maximum*</b>
+                        <td class="table-light" scope="row" colspan="4"><b>Annual out-of-pocket maximum*</b>
                             <br>The most you and your covered family members would have to pay in a year for health care costs
                         </td>
                 </tr>
@@ -109,20 +179,20 @@
                   <br>$7,000</td>
 				  
 				  <tr>
-				 <td ><b>Preventive care</b>
+				 <td class="table-light" ><b>Preventive care</b>
 				</td>
-					<td colspan="3"><center>Covered 100%, no deductible</center></td>
+					<td class="table-light" colspan="3"><center>Covered 100%, no deductible</center></td>
 					
 					
 				  </tr>
 				<tr>
-					<th scope="row">Urgent care</th>
+					<th class="table-light" scope="row">Urgent care</th>
 					<td rowspan="7"  style="vertical-align: middle; text-align:center;">You pay 20% after deductible</td>
 					<td colspan="2">You pay 20% after deductible</td>
 					
 				  </tr>
 				<tr>
-				  <td scope="row"><b>Office visits<br></b>Primary care physician 
+				  <td class="table-light" scope="row"><b>Office visits<br></b>Primary care physician 
                     Specialist
                     </td>
 					
@@ -131,22 +201,22 @@
 					  
                     </tr>
                     <tr>
-                            <th scope="row">Emergency room </th>
+                            <th class="table-light" scope="row">Emergency room </th>
                                 <td colspan="2">You pay 20% after deductible</td>
                             </tr>
           
 					<tr>
-						<td scope="row"><b>Inpatient hospital services </b> (per admission)</td>
+						<td class="table-light" scope="row"><b>Inpatient hospital services </b> (per admission)</td>
 						<td colspan="2">You pay 20% after deductible</td>
                       </tr>
 
                      <tr>
-                            <th scope="row">Outpatient care</th>
+                            <th class="table-light" scope="row">Outpatient care</th>
                             <td colspan="2">You pay 20% after deductible</td>
                       </tr>
                       
                       	<tr>
-                            <th scope="row" >Prescription drugs</th>
+                            <th class="table-light" scope="row" >Prescription drugs</th>
                             <td >30-day retail supply</td>
                             <td >90-day supply</td>
                       </tr>
@@ -175,7 +245,7 @@
 		<p>This chart may not take into account how each coverage level covers any state-mandated benefits, its plan administration capabilities, or the approval from the state Department of Insurance of the benefits offered by the plan. If you have questions about a specific benefit, contact the carrier for additional information.</p>
 		<p>	Out-of-network charges will not count toward your in-network annual deductible or out-of-pocket maximum. The same goes for in-network charges—they will not count toward your out-of-network annual deductible or out-of-pocket maximum. 
                 Some insurance carriers in CA, CO, DC, GA, MD, OR, VA, and WA do not cover out-of-network benefits at all. </p>
-		<p><a href="http:MyDanaherBenefits.com">MyDanaherBenefits.com</a> gives a more detailed look at these and additional coverages—and does account for some carrier adjustments to standardized plan benefits. To see summaries when you enroll online, check the boxes next to the options you want to review and click Compare. In order to get the most comprehensive information about any specific coverage, you will need to call the carrier directly.</p>
+		<p><a href="http://MyDanaherBenefits.com">MyDanaherBenefits.com</a> gives a more detailed look at these and additional coverages—and does account for some carrier adjustments to standardized plan benefits. To see summaries when you enroll online, check the boxes next to the options you want to review and click Compare. In order to get the most comprehensive information about any specific coverage, you will need to call the carrier directly.</p>
 	</small>
 
 </div>
@@ -214,6 +284,16 @@
 		
 		</div>
 
+	<!-- full page search with iziModal -->
+  <div class="" id="myModal">
+    <button data-iziModal-close class="icon-close">x</button>
+    <h2 class="mt">Search Results</h2>
+    <div id="myDiv"></div>
+    <footer>
+      <button data-izimodal-close="" class="button-close">Close</button>
+    </footer>
+  </div>
+
 <div class="site-footer pw">
 		<div id="totop" style="bottom: 30px;"><div>Top</div></div>
 		<div class="footer-tagline"></div>
@@ -236,6 +316,5 @@
 		
 	<!-- custom js--> 
 	<script src="js/common.js"></script> 
-	<script src="js/custom.js"></script>
 	</body>
 	</html>

@@ -1,17 +1,23 @@
 
 /*load header*/
 // $('#inc-menu').load('navbar.html')
-$('#inc-header').load('header.html');
+// $('#inc-header').load('header.html');
 // $('#inc-footer').load('footer.html');
 
+$(document).scroll(function() {
+    if ($(document).scrollTop() > 200) {
+        $("#totop").css("bottom", "18px");
+    } else {
+        $("#totop").css("bottom", "-200px");
+    }
+    if ($(document).scrollTop() > 76) {
+        $("#searchbar").addClass("active");
+    } else {
+        $("#searchbar").removeClass("active");
+    }
+});
 
-    $(document).scroll(function() {
-        if ($(document).scrollTop() > 200) {
-            $("#totop").css("bottom", "18px");
-        } else {
-            $("#totop").css("bottom", "-200px");
-        }
-    });
+$(document).ready(function() {
 
     $("#totop").click(function() {
         $('html, body').animate({
@@ -19,34 +25,68 @@ $('#inc-header').load('header.html');
         }, 800)
     });
 
-
-$(document).ready(function() {
+    $('#tipue_search_input').tiles();
     $('.drawer').drawer();
-});
+    $('#inc-menu').load('navbar.html')
 
-$( function() {
+    $("#inc-en-footer").load("inc-en-footer.html", function() {
+        $("#legal").on("click", function(e) {
+            $('#dialog-legal').iziModal('open');
+            e.preventDefault();
+        });
+    });
+
     $( "#accordion" ).accordion({
 		collapsible: true,
         active: false,
         heightStyle: "content"
-
 	});
-			$( "#accordion h4" ).click(function (event){
-				console.log(event);
-				var elements = $("#accordion h4")
-				console.log(elements)
-				$.each(elements,function (index,element){
-					$(element).removeClass("active")
-				})
-				$(event.target).addClass("active")
-				console.log(event.target)
-			})
-  		} );  
+    $( "#accordion h4" ).click(function (event){
+        console.log(event);
+        var elements = $("#accordion h4")
+        console.log(elements)
+        $.each(elements,function (index,element){
+            $(element).removeClass("active")
+        });
+        $(event.target).addClass("active")
+        console.log(event.target)
+    });
+});
 
+function trackTiles() {
+    $('.tileboxbt').each(function() {
+        var label = 'Tile link: ' + $(this).attr('href') + ' | Tile section: ' + $(this).closest('section').prop('id');
+        $(this).attr('onclick', "ga('send', 'event', 'Tile', 'Clicked', '" + label + "', {'nonInteraction': 1});");
+    });
+}
 
+function eventTrack() {
+    $('a[href^="http"]').each(function() {
+        // ADD GA tracking code to links
+        $(this).attr('onclick', "ga('send', 'event', 'Outbound', 'Clicked', jQuery(this).attr('href'), {'nonInteraction': 1});");
+        $(this).attr('target', '_blank'); // OPTIONAL: ADD target blank
+        $(this).append('<span class="sr-only">opens in a new window</span>');
+    });
+    $('a[href^="https"]').each(function() {
+        // ADD GA tracking code to links
+        $(this).attr('onclick', "ga('send', 'event', 'Outbound', 'Clicked', jQuery(this).attr('href'), {'nonInteraction': 1});");
+        $(this).attr('target', '_blank'); // OPTIONAL: ADD target blank
+        $(this).append('<span class="sr-only">opens in a new window</span>');
+    });
+    $('a[href^="pdf/"]').each(function() {
+        // ADD GA tracking code to links
+        $(this).attr('onclick', "ga('send', 'event', 'PDF', 'Clicked', jQuery(this).attr('href'), {'nonInteraction': 1});");
+        $(this).attr('target', '_blank'); // OPTIONAL: ADD target blank
+        $(this).append('<span class="sr-only">opens in a new window</span>');
+    });
+    $('a[href^="video/"]').each(function() {
+        // ADD GA tracking code to links
+        $(this).attr('onclick', "ga('send', 'event', 'Video', 'Clicked', jQuery(this).attr('href'), {'nonInteraction': 1});");
+        $(this).attr('target', '_blank'); // OPTIONAL: ADD target blank
+        $(this).append('<span class="sr-only">opens in a new window</span>');
+    });
 
-
-    
+}
 
 function showEnrolDays(){
     var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
@@ -107,6 +147,41 @@ $(window).on('resize',function(){
     }
     
 })
+
+// function showEnrolDays(){
+//     var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+//     var firstDate = new Date();
+//     console.log(firstDate)
+//     var secondDate = new Date("nov 1, 2018 12:00:00");
+//     console.log(secondDate)
+
+//     var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+//     console.log(diffDays)
+
+//     if(diffDays==1){
+//         $("#daysToEnroll").html(diffDays)
+//         $("#days").html("day until Annual Enrollment begins")
+
+//     }else if (diffDays>1){	
+//         $("#daysToEnroll").html(diffDays);
+//         $("#days").html("days until Annual Enrollment begins")
+
+
+//     }
+//     else if(diffDays==0){
+//         $(".utility-nav").css("visibility","visible");
+//         $("#daysToEnroll").css("display","none");
+//         $("#days").css("display","none");
+//         $(".pw").css("display","block")
+//     }
+// }
+
+// showEnrolDays();
+// $(window).resize();
+
+
+
+
 // Get IE or Edge browser version
 var version = detectIE();
 var version_pass = false;
@@ -589,10 +664,7 @@ if (version_pass) {
 
         for (var i = 0; i < tile_data.length; i++) {
             newWindow = false;
-            
-
             if ((tile_data[i].bg_img) && (tile_data[i].icon.trim() == 'video')) {
-
                 htmlString_learn += '<a style = "background-image: url(' + tile_data[i].bg_img_url + ');" id="' + tile_data[i].id + '"  class="' + tile_data[i].bg_class + ' tileboxbt align-bottom icon-video" href= "' + tile_data[i].filename + '"><div class="text-mask"></div><div class=tilebox><h2>' + tile_data[i].title + ' </h2> </div></a>';
             } else if (tile_data[i].bg_img) {
                 htmlString_learn += '<a style = "background-image: url(' + tile_data[i].bg_img_url + ');" id="' + tile_data[i].id + '"  class=" tileboxbt ' + tile_data[i].bg_class + ' align-bottom" href="' + tile_data[i].filename + '"><div class="text-mask"></div><div class=tilebox><h2>' + tile_data[i].title + ' </h2> </div></a>';
@@ -654,6 +726,7 @@ if (version_pass) {
         $('#learn1').html(htmlString_learn);
         $('#decide1').html(htmlString_decide);
         $('#enroll1').html(htmlString_enroll);
+        trackTiles();
 
         /*hide parent incase no content*/
         if (cnt == 0) {
@@ -905,6 +978,7 @@ if (version_pass) {
                 //     $("#related1").unslick();
             }
             $('#related1').html(htmlString_related);
+            trackTiles('related');
             //$("#related1").not('.slick-initialized').slick({
             $('#related1').slick({
                 dots: false,
@@ -1122,45 +1196,6 @@ if (version_pass) {
 
     });
 
-
-    function eventTrack() {
-        $('a[href^="http"]').each(function() {
-
-            // ADD GA tracking code to links
-            $(this).attr('onclick', "ga('send', 'event', 'Outbound', 'Clicked', jQuery(this).attr('href'), {'nonInteraction': 1});");
-            $(this).attr('target', '_blank'); // OPTIONAL: ADD target blank
-            $(this).append('<span class="sr-only">opens in a new window</span>');
-        });
-
-        $('a[href^="https"]').each(function() {
-
-            // ADD GA tracking code to links
-            $(this).attr('onclick', "ga('send', 'event', 'Outbound', 'Clicked', jQuery(this).attr('href'), {'nonInteraction': 1});");
-            $(this).attr('target', '_blank'); // OPTIONAL: ADD target blank
-            $(this).append('<span class="sr-only">opens in a new window</span>');
-        });
-
-        $('a[href^="pdf/"]').each(function() {
-
-            // ADD GA tracking code to links
-            $(this).attr('onclick', "ga('send', 'event', 'PDF', 'Clicked', jQuery(this).attr('href'), {'nonInteraction': 1});");
-            $(this).attr('target', '_blank'); // OPTIONAL: ADD target blank
-            $(this).append('<span class="sr-only">opens in a new window</span>');
-        });
-        $('a[href^="video/"]').each(function() {
-
-            // ADD GA tracking code to links
-            $(this).attr('onclick', "ga('send', 'event', 'Video', 'Clicked', jQuery(this).attr('href'), {'nonInteraction': 1});");
-            $(this).attr('target', '_blank'); // OPTIONAL: ADD target blank
-            $(this).append('<span class="sr-only">opens in a new window</span>');
-        });
-
-
-       
-
-
-    }
-
     // Scroll to fn with offset options
     function scrollTo(el, d, n) { // element, diff(-/+), number
         if (d !== undefined) { // If offset is provided
@@ -1193,11 +1228,3 @@ if (version_pass) {
 
 }
 
-$(document).ready(function() {    
-    $("#inc-en-footer").load("inc-en-footer.html", function() {
-             $("#legal").on("click", function(e) {
-        $('#dialog-legal').iziModal('open');
-        e.preventDefault();
-     });
-    })    
-});
