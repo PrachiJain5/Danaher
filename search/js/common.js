@@ -43,14 +43,11 @@ $(document).ready(function() {
     });
     
     $( "#myAccordion h4" ).click(function (event){
-        var elements = $("#myAccordion h4");
+        var elements = $("#myAccordion h4").not($(event.target));
         var accordElement = $(event.target);
-        var allAccordElements= $('.accord_section');
-        $.each(allAccordElements,function (index,element){
-            $(element).css("display","none")
-        });
+       
         $.each(elements,function (index,element){
-            $(element).removeClass("active")
+            $(element).removeClass("active").next().slideUp()
         });
         $(event.target).addClass("active");
         accordElement.next(".accord_section").slideToggle()
