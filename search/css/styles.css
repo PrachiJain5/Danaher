@@ -924,3 +924,6 @@ table, th ,tr,td {
     padding-left: 10px;
 }
 
+.accord_section{
+    display: none;
+}

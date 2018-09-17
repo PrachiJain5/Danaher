@@ -40,16 +40,16 @@ $(document).ready(function() {
 		collapsible: true,
         active: false,
         heightStyle: "content"
-	});
-    $( "#accordion h4" ).click(function (event){
-        console.log(event);
-        var elements = $("#accordion h4")
-        console.log(elements)
+    });
+    
+    $( "#myAccordion h4" ).click(function (event){
+        var elements = $("#accordion h4");
+        var accordElement = $(event.target)
         $.each(elements,function (index,element){
             $(element).removeClass("active")
         });
-        $(event.target).addClass("active")
-        console.log(event.target)
+        $(event.target).addClass("active");
+        accordElement.next(".accord_section").slideToggle()
     });
 });
 
