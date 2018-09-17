@@ -43,8 +43,12 @@ $(document).ready(function() {
     });
     
     $( "#myAccordion h4" ).click(function (event){
-        var elements = $("#accordion h4");
-        var accordElement = $(event.target)
+        var elements = $("#myAccordion h4");
+        var accordElement = $(event.target);
+        var allAccordElements= $('.accord_section');
+        $.each(allAccordElements,function (index,element){
+            $(element).css("display","none")
+        });
         $.each(elements,function (index,element){
             $(element).removeClass("active")
         });
