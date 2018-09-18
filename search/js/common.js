@@ -17,6 +17,26 @@ $(document).scroll(function() {
     }
 });
 
+$(window).on('load',function () {
+    // code here
+    var tileElements = $('.tileboxbt')
+    $.each(tileElements,function (i,element){
+        
+        var bgProperty = $(element).attr("style").split(";")
+        // console.log(bgProperty)
+        $.each(bgProperty,function (i,ele){
+            console.log(ele.split(":"))
+            if(ele.split(":")[1]==' url("")'){
+                $(element).find('.tilebox h2').css('bottom','40%')
+
+                console.log()
+            }
+
+        })
+    })
+
+   });
+
 $(document).ready(function() {
 
     $("#totop").click(function() {
@@ -52,6 +72,9 @@ $(document).ready(function() {
         $(event.target).addClass("active");
         accordElement.next(".accord_section").slideToggle()
     });
+
+    
+
 });
 
 function trackTiles() {
