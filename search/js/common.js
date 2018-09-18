@@ -27,9 +27,11 @@ $(window).on('load',function () {
         $.each(bgProperty,function (i,ele){
             console.log(ele.split(":"))
             if(ele.split(":")[1]==' url("")'){
-                $(element).find('.tilebox h2').css({'bottom':'30%','font-size':'30px'}).
-
-                console.log()
+                $(element).find('.tilebox h2').css({'bottom':'30%','font-size':'30px'})
+                console.log(element)
+                $(element).on('mouseover',function(event){
+                    event.preventDefault();
+                })
             }
 
         })
