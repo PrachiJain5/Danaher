@@ -19,19 +19,35 @@ $(document).scroll(function() {
 
 $(window).on('load',function () {
     // code here
+    if($(screen)[0].width<=425){
+        $("#dateDiv").css({'padding-left':'10px'})
+        $("#daysToEnroll").css({'font-size':'150px'})
+    }
+    else{
+        $("#dateDiv").css({'padding-left':'50px'})
+
+    }
     var tileElements = $('.tileboxbt')
     $.each(tileElements,function (i,element){
         
         var bgProperty = $(element).attr("style").split(";")
         // console.log(bgProperty)
         $.each(bgProperty,function (i,ele){
-            console.log(ele.split(":"))
             if(ele.split(":")[1]==' url("")'){
-                $(element).find('.tilebox h2').css({'bottom':'30%','font-size':'30px'})
-                console.log(element)
-                $(element).on('mouseover',function(event){
-                    event.preventDefault();
-                })
+                if($(screen)[0].width<=425){
+                    $(element).find('.tilebox h2').css({'bottom':'24%','font-size':'24px'})
+
+                    //remove Nobr
+                   var h2Text = $(element).find('.tilebox h2').html()
+                   if(h2Text.indexOf('<nobr>')>-1){
+                    var h2Text = h2Text.replace('<nobr>','');
+                    var h2Text = h2Text.replace('</nobr>','');
+
+                    $(element).find('.tilebox h2').html(h2Text)                   }
+                }else{
+                    $(element).find('.tilebox h2').css({'bottom':'24%','font-size':'26px'})
+                }
+                
             }
 
         })
@@ -169,10 +185,12 @@ $(window).on('resize',function(){
     else{
         $('.page-header').css({'background-size':'80px'})
         element.css({"left":0})
-        location.reload()
+        // location.reload()
     }
+   
     
 })
+
 
 // function showEnrolDays(){
 //     var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds

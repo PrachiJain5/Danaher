@@ -887,6 +887,8 @@ div#dateDiv {
 }
 h1#daysToEnroll {
     padding-top: 20px;
+    font-size: 150px;
+
 }
 /* h1#days {
     font-size: 33px;
