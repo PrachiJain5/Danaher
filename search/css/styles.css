@@ -929,3 +929,7 @@ table, th ,tr,td {
 .accord_section{
     display: none;
 }
+.fontSizeChange{
+    font-size: 26px;
+    color: red;
+}

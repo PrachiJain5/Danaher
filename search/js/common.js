@@ -17,6 +17,22 @@ $(document).scroll(function() {
     }
 });
 
+var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+console.log(isIE)
+if(isIE){
+   
+    var foundElements = [];
+    var elements = document.all
+    console.log(elements.length)
+    for(i=0;i<elements.length;i++){
+        if (elements[i].className == 'tilebox') {
+            foundElements[foundElements.length] = elements[i];
+        }
+    }
+    console.log(foundElements.length)
+}
+
 $(window).on('load',function () {
     // code here
     if($(screen)[0].width<=425){
@@ -35,8 +51,11 @@ $(window).on('load',function () {
         $.each(bgProperty,function (i,ele){
             if(ele.split(":")[1]==' url("")'){
                 if($(screen)[0].width<=425){
-                    $(element).find('.tilebox h2').css({'bottom':'24%','font-size':'24px'})
+                    // $(element).find('.tilebox h2').css({'bottom':'24%','font-size':'24px'})
+                    
+                    $(element).find('.tilebox h2').addClass(fontSizeChange)
 
+                    console.log("Chek with IE")
                     //remove Nobr
                    var h2Text = $(element).find('.tilebox h2').html()
                    if(h2Text.indexOf('<nobr>')>-1){
@@ -770,6 +789,15 @@ if (version_pass) {
         $('#learn1').html(htmlString_learn);
         $('#decide1').html(htmlString_decide);
         $('#enroll1').html(htmlString_enroll);
+        var AllElements = $('.tileboxbt');
+
+        $.each(AllElements,function (i,e){
+            var attrs= $(e).attr('style');
+           if(attrs.split(":")[1]==" none;"){
+               $(e).find('h2')
+                console.log($(e).find('h2').css({'font-size':'28px','bottom':'24%'}))
+           }
+        })
         trackTiles();
 
         /*hide parent incase no content*/
