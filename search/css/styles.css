@@ -240,6 +240,7 @@ h4.accord {
     line-height: 1;
     border-top: solid 1px #ddd;
     border-bottom: solid 1px #ddd;
+    outline:none;
 }
 
 h4.accord:first-of-type {margin-top: 40px;}
@@ -543,6 +544,9 @@ div.accord {padding: 20px 60px;}
 .hero .tileboxbt .tilebox {
     padding: 8px 0;
     top:0;
+}
+#accordion h4{
+    outline: none;
 }
 /* line 70, ../sass/partials/_hero.scss */
 .hero .tileboxbt .tilebox h2 {
