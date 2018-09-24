@@ -462,7 +462,7 @@ div.accord {padding: 20px 60px;}
 }
 /* line 39, ../sass/partials/_hero.scss */
 .hero .tileboxbt.align-bottom:hover {
-    opacity: 0.8;
+    opacity: 1;
 }
 /* line 40, ../sass/partials/_hero.scss
 .hero .tileboxbt.align-bottom .tilebox {
@@ -542,6 +542,7 @@ div.accord {padding: 20px 60px;}
 /* line 69, ../sass/partials/_hero.scss */
 .hero .tileboxbt .tilebox {
     padding: 8px 0;
+    top:0;
 }
 /* line 70, ../sass/partials/_hero.scss */
 .hero .tileboxbt .tilebox h2 {
@@ -758,7 +759,7 @@ a.tileboxbt{
 	height: 161px;
     margin: 0 4px;
     position: relative;
-	background-color: rgba(3,93,103, 1.0);
+	background-color: rgba(3,93,103, 0.8);
     background-size: cover;
     background-position: 50% top;
     background-repeat: no-repeat;
@@ -803,19 +804,19 @@ a:hover.tileboxbt .tilebox h2 {
 .tilebox-content h1, .tilebox-content h2, .tilebox-content h3 {color: #ffffff; padding: 0; line-height: 1.2; margin: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.4)}
 
 
-#decide1 a.tileboxbt{background-color:rgba(122,166,55, 1.0); border-radius: 0px 0px 0px 40px;}
+#decide1 a.tileboxbt{background-color:rgba(122,166,55, 0.8); border-radius: 0px 0px 0px 40px;}
 #decide1 a:nth-of-type(2n).tileboxbt{border-radius: 40px 0 0 0;}
 #decide1 a:nth-of-type(3n).tileboxbt{border-radius: 0 0 40px 0;}
 #decide1 a:nth-of-type(4n).tileboxbt{border-radius: 0 40px 0 0;}
-#decide1 a:hover.tileboxbt{background-color:rgba(122,166,55, 0.8);}
+#decide1 a:hover.tileboxbt{background-color:rgba(122,166,55, 1);}
 #decide1 .tilebox h2{background-color: rgba(122,166,55, 0.60);}
 #decide1 a:hover.tileboxbt .tilebox h2{background-color: rgba(122,166,55, 0.90);}
 	
-#enroll1 a.tileboxbt{background-color: rgba(220,96,22, 1.0); border-radius: 40px 0 0 0;}
+#enroll1 a.tileboxbt{background-color: rgba(220,96,22, 0.8); border-radius: 40px 0 0 0;}
 #enroll1 a:nth-of-type(2n).tileboxbt{border-radius: 0 0 40px 0;}
 #enroll1 a:nth-of-type(3n).tileboxbt{border-radius: 0 40px 0 0;}
 #enroll1 a:nth-of-type(4n).tileboxbt{border-radius: 0 0 0 40px;}
-#enroll1 a:hover.tileboxbt{background-color: rgba(220,96,22, 0.8);}
+#enroll1 a:hover.tileboxbt{background-color: rgba(220,96,22, 1);}
 #enroll1 .tilebox h2{background-color: rgba(220,96,22, 0.60);}
 #enroll1 a:hover.tileboxbt .tilebox h2{background-color: rgba(220,96,22, 0.90);}
 
@@ -932,4 +933,8 @@ table, th ,tr,td {
 .fontSizeChange{
     font-size: 26px;
     color: red;
+}
+.speech {
+    overflow: auto;
+    margin-right: 20px;
 }

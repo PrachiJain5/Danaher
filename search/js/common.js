@@ -62,10 +62,16 @@ $(window).on('load',function () {
                     var h2Text = h2Text.replace('<nobr>','');
                     var h2Text = h2Text.replace('</nobr>','');
 
-                    $(element).find('.tilebox h2').html(h2Text)                   }
-                }else{
-                    $(element).find('.tilebox h2').css({'bottom':'24%','font-size':'26px'})
+                    $(element).find('.tilebox h2').html(h2Text);
+                    $(element).find('.tilebox h2').css({'bottom':'24%','font-size':'20px','top':0,'height':'100%','padding-top': '20px'})
+                    $(element).find('.tilebox h2').css({'opacity':'0.8'})
+                    $(element).find('.tilebox').css({'top':0})
+
                 }
+                }else{
+                    $(element).find('.tilebox h2').css({'bottom':'24%','font-size':'26px','top':0,'height':'100%','padding-top': '61px'})
+                    $(element).find('.tilebox h2').css({'opacity':'0.8'})
+                    }
                 
             }
 
@@ -795,7 +801,7 @@ if (version_pass) {
             var attrs= $(e).attr('style');
            if(attrs.split(":")[1]==" none;"){
                $(e).find('h2')
-                console.log($(e).find('h2').css({'font-size':'28px','bottom':'24%'}))
+                console.log($(e).find('h2').css({'font-size':'28px','bottom':'24%','top':0,'height':'100%'}))
            }
         })
         trackTiles();
