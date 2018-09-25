@@ -66,11 +66,12 @@ $(window).on('load',function () {
                     $(element).find('.tilebox h2').css({'bottom':'24%','font-size':'20px','top':0,'height':'100%','padding-top': '20px'})
                     $(element).find('.tilebox h2').css({'opacity':'0.8'})
                     $(element).find('.tilebox').css({'top':0})
+                    $(element).find('.tilebox h2').css({'color':'white'})
 
                 }
                 }else{
                     $(element).find('.tilebox h2').css({'bottom':'24%','font-size':'26px','top':0,'height':'100%','padding-top': '61px'})
-                    $(element).find('.tilebox h2').css({'opacity':'0.8'})
+                    $(element).find('.tilebox h2').css({'color':'white'})
                     }
                 
             }
