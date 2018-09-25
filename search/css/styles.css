@@ -778,7 +778,7 @@ a.tileboxbt{
 a:nth-of-type(2n).tileboxbt{border-radius: 0 0 0 40px;}
 a:nth-of-type(3n).tileboxbt{border-radius: 40px 0 0 0;}
 a:nth-of-type(4n).tileboxbt{border-radius: 0 0 40px 0;}
-a:hover.tileboxbt{background-color: rgba(3,93,103, 0.8);}
+a:hover.tileboxbt{background-color: rgb(1, 63, 72);}
 
 .tilebox {
     /* display: table; */
@@ -798,7 +798,7 @@ a:hover.tileboxbt{background-color: rgba(3,93,103, 0.8);}
 }
 a:hover.tileboxbt .tilebox h2 {
     display: block;
-    background-color: rgba(3,93,103, 0.90);
+    background-color: rgb(1, 63, 72);
     padding: 13px;
     margin: -1px;
     color: #ffffff;
