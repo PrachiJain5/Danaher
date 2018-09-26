@@ -778,7 +778,7 @@ a.tileboxbt{
 a:nth-of-type(2n).tileboxbt{border-radius: 0 0 0 40px;}
 a:nth-of-type(3n).tileboxbt{border-radius: 40px 0 0 0;}
 a:nth-of-type(4n).tileboxbt{border-radius: 0 0 40px 0;}
-a:hover.tileboxbt{background-color: rgb(1, 63, 72);}
+a:hover.tileboxbt{background-color: rgba(3,93,103, 0.8);}
 
 .tilebox {
     /* display: table; */
@@ -789,7 +789,7 @@ a:hover.tileboxbt{background-color: rgb(1, 63, 72);}
     background-color: rgba(3,93,103, 0.60);
     padding: 10px;
     margin: -1px;
-    color: #ffffff !important;
+    color: #ffffff;
     font-size: 14px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
     position: absolute;
@@ -798,7 +798,7 @@ a:hover.tileboxbt{background-color: rgb(1, 63, 72);}
 }
 a:hover.tileboxbt .tilebox h2 {
     display: block;
-    background-color: rgb(1, 63, 72);
+    background-color: rgba(3,93,103, 0.90);
     padding: 13px;
     margin: -1px;
     color: #ffffff;

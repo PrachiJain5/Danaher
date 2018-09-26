@@ -67,7 +67,7 @@ $(window).on('load',function () {
                     $(element).find('.tilebox h2').css({'opacity':'0.8'})
                     $(element).find('.tilebox').css({'top':0})
                     $(element).find('.tilebox h2').css({'color':'white'})
-
+                   
                 }
                 }else{
                     $(element).find('.tilebox h2').css({'bottom':'24%','font-size':'26px','top':0,'height':'100%','padding-top': '61px'})
@@ -797,12 +797,21 @@ if (version_pass) {
         $('#decide1').html(htmlString_decide);
         $('#enroll1').html(htmlString_enroll);
         var AllElements = $('.tileboxbt');
+//IE COde 
 
         $.each(AllElements,function (i,e){
             var attrs= $(e).attr('style');
+            console.log(attrs)
+            console.log(attrs.split(" ")[1])
+            var internal=attrs.split(" ")
+            console.log(internal)
            if(attrs.split(":")[1]==" none;"){
                $(e).find('h2')
                 console.log($(e).find('h2').css({'font-size':'28px','bottom':'24%','top':0,'height':'100%'}))
+                $(e).find('h2').css({'font-size':'28px','bottom':'24%','top':0,'height':'100%'})
+           }else if(attrs.split(" ")[1]=="url();" || internal[3]=="none;"){
+                console.log("This is IE")
+                $(e).find('h2').css({'font-size':'28px','bottom':'24%','top':0,'height':'100%','padding-top': '61px','color':'white'})
            }
         })
         trackTiles();
