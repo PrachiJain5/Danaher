@@ -811,18 +811,21 @@ if (version_pass) {
 
         $.each(AllElements,function (i,e){
             var attrs= $(e).attr('style');
-            // console.log(attrs)
+            console.log(attrs)
             console.log(attrs.split(" ")[1])
-            // var internal=attrs.split(" ")
-            // console.log(internal)
-           if(attrs.split(":")[1]==" none;" || attrs.split(":")[1]=="none;"  ){
+            var internal=attrs.split(" ")
+            console.log(internal)
+           if(attrs.split(":")[1]==" none;" ){
                $(e).find('h2')
-               console.log('entered')
-                console.log($(e).find('h2').css({'font-size':'28px','bottom':'24%','top':0,'height':'100%','padding-top': '61px','color':'white'}))
-                $(e).find('h2').css({'font-size':'28px','bottom':'24%','top':0,'height':'100%'})
+                console.log($(e).find('h2').css({'font-size':'28px','bottom':'24%','top':0,'height':'100%'}))
+                $(e).find('h2').css({'font-size':'28px','bottom':'24%','top':0,'height':'100%','padding-top': '60px'})
+                console.log("It came here .....")
            }else if(attrs.split(" ")[1]=="url();" || internal[3]=="none;"){
-                console.log("This is IE")
                 $(e).find('h2').css({'font-size':'28px','bottom':'24%','top':0,'height':'100%','padding-top': '61px','color':'white'})
+                console.log("It came here ***********")
+
+            }else if(attrs.split(":")[1]=="none;"){
+               console.log("It Came herere")
            }
         })
         trackTiles();
