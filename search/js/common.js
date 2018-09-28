@@ -117,9 +117,19 @@ $(document).ready(function() {
         accordElement.next(".accord_section").slideToggle()
     });
 
+    if($(location)[0].hash =='#true'){
+        $('#myAccordion h4').last().next('.accord_section').slideDown()
+        $('#myAccordion h4').last().addClass('active');
+        console.log("Just Triggered")
+    }
     
-
+  
 });
+
+function goTrueFamily(index){
+    $('#myAccordion h4').eq(index).next('.accord_section').slideDown()
+    $('#myAccordion h4').eq(index).addClass('active')
+}
 
 function trackTiles() {
     $('.tileboxbt').each(function() {

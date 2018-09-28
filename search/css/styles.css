@@ -619,7 +619,8 @@ div.accord {padding: 20px 60px;}
     }
     .tilebox {
         position: absolute !important;
-        bottom: 0;
+        top: 0;
+        height: 100%;
     }
     
 }
