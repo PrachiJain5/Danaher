@@ -631,6 +631,10 @@ div.accord {padding: 20px 60px;}
     #tipue_drop_content {
         top: 147px ;
         }
+        .speech {
+            overflow: auto;
+            margin-right: 20px;
+        }
 }
 @media only screen and (min-width: 1024px) {
     #tipue_drop_content {
@@ -938,8 +942,4 @@ table, th ,tr,td {
 .fontSizeChange{
     font-size: 26px;
     color: red;
-}
-.speech {
-    overflow: auto;
-    margin-right: 20px;
 }

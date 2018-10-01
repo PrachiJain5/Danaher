@@ -223,6 +223,12 @@ $(window).on('resize',function(){
         element.css({"left":0})
         // location.reload()
     }
+
+    if($(screen)[0].width<768){
+        $('.speech').css({'margin-right':'0px !important'})
+        console.log(".speech....")
+
+    }
    
     
 })
@@ -818,7 +824,7 @@ if (version_pass) {
            if(attrs.split(":")[1]==" none;" ){
                $(e).find('h2')
                 console.log($(e).find('h2').css({'font-size':'28px','bottom':'24%','top':0,'height':'100%'}))
-                $(e).find('h2').css({'font-size':'28px','bottom':'24%','top':0,'height':'100%','padding-top': '60px'})
+                $(e).find('h2').css({'font-size':'28px','bottom':'24%','top':0,'height':'100%','padding-top': '50px'})
                 console.log("It came here .....")
            }else if(attrs.split(" ")[1]=="url();" || internal[3]=="none;"){
                 $(e).find('h2').css({'font-size':'28px','bottom':'24%','top':0,'height':'100%','padding-top': '61px','color':'white'})
